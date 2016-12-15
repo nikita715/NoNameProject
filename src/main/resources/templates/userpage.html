@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link th:href="@{/style.css}" href="../static/style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div class="page-container">
+        <h1>Project Shelf</h1>
+        <h2>Profile</h2>
+        <p th:text="'username: ' + ${user.username}" />
+        <p th:text="'password: ' + ${user.password}" />
+        <p th:text="'num: ' + ${num}" />
+        <a href="/">Submit another message</a>
+    </div>
+</body>
+</html>

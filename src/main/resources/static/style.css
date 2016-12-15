@@ -1,0 +1,128 @@
+@font-face {
+    font-family: Lobster-Regular;
+    src: url(fonts/Lobster-Regular.ttf);
+}
+
+.index-page-container {
+    margin: 0 auto;
+    height: 100%;
+}
+
+.main-site-link {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+}
+
+.main-site-link a {
+    font-size: 32px;
+    font-family: Lobster-Regular;
+    font-weight: normal;
+    color: #A5260A;
+    cursor: pointer;
+}
+
+.main-site-link a:hover {
+    color: #CF2F0C;
+}
+
+.enter-form {
+    display: flex;
+    width: 170px;
+    margin: 0 auto;
+    flex-flow: column wrap;
+}
+
+.enter-form-field {
+    padding: 5px 10px;
+    box-sizing: border-box;
+    font-family: "Calibri";
+    font-size: 15px;
+    border-radius: 2px;
+    border: 1px solid #cccccc;
+}
+
+.enter-form input {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.enter-form-enter {
+    padding: 8px 0;
+    font-family: "Calibri";
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    border-radius: 2px;
+    background-color: #A5260A;
+    color: white;
+    cursor: pointer;
+}
+
+.enter-to-register-button {
+    margin-top: 10px;
+    padding: 3px 0;
+    box-sizing: border-box;
+    font-family: "Calibri";
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    border: 2px solid #A5260A;
+    border-radius: 2px;
+    background-color: white;
+    color: #A5260A;
+    cursor: pointer;
+}
+
+.enter-form-enter:hover {
+    background-color: #CF2F0C;
+}
+
+.enter-to-register-button:hover {
+    color: #CF2F0C;
+    border-color: #CF2F0C;
+}
+
+.register-form {
+    display: none;
+    width: 170px;
+    margin: 0 auto;
+    flex-flow: column wrap;
+}
+
+.register-form input {
+    flex-basis: 100%;
+}
+
+.register-form-field {
+    padding: 5px 10px;
+    box-sizing: border-box;
+    font-family: "Calibri";
+    font-size: 15px;
+    border-radius: 2px;
+    border: 1px solid #cccccc;
+}
+
+.register-form input {
+    flex-basis: 50%;
+    margin-top: 10px;
+    outline: none;
+}
+
+.register-form-register {
+    padding: 8px 0;
+    font-family: "Calibri";
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    border-radius: 2px;
+    background-color: #A5260A;
+    color: white;
+    cursor: pointer;
+}
+
+.register-form-register:hover {
+    background-color: #CF2F0C;
+}
