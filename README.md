@@ -1,2 +1,2 @@
-# NoNameProject
-Empty repository for the Applets Development course. Just for motivation
+# Shelf
+App for task managenent
