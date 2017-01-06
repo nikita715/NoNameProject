@@ -1,9 +1,6 @@
 package ru.ifmo.shelf.model;
 
-import org.springframework.boot.autoconfigure.domain.EntityScan;
-
 import javax.persistence.*;
-
 /**
  * Created by nikge on 08.11.2016.
  */
@@ -12,14 +9,17 @@ import javax.persistence.*;
 public class User {
 
     @Id
-    @Column(name = "id")
+    @GeneratedValue
+    @Column(name = "ID")
     private Integer id;
 
-    @Column(name = "username")
-    private String username;
+    @Column(name = "NAME")
+    private String name;
 
-    @Column(name = "password")
+    @Column(name = "PASSWORD")
     private String password;
+
+    private String passwordСheck;
 
     public Integer getId() {
         return id;
@@ -29,12 +29,12 @@ public class User {
         this.id = id;
     }
 
-    public String getUsername() {
-        return username;
+    public String getName() {
+        return name;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getPassword() {
@@ -43,5 +43,13 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getPasswordСheck() {
+        return passwordСheck;
+    }
+
+    public void setPasswordСheck(String passwordСheck) {
+        this.passwordСheck = passwordСheck;
     }
 }

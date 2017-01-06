@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="shelf" />
+        <module name="gs-serving-web-content" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="shelf" target="1.8" />
+      <module name="gs-serving-web-content" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

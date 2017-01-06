@@ -2,31 +2,32 @@
 <html xmlns:th="http://www.thymeleaf.org">
 
 <head>
-    <title>Getting Started: Handling Form Submission</title>
+    <title>Shelf</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link th:href="@{/style.css}" href="../static/style.css" rel="stylesheet" type="text/css" />
+    <link th:href="@{/css/style.css}" href="../css/style.css" rel="stylesheet" type="text/css" />
+    <link th:href="@{/img/favicon.png}" rel="icon" type="image/png" href="../static/img/favicon.png" />
 </head>
 
 <body>
-    <div class="index-page-container">
-        <div class="main-site-link">
-            <a>Shelf</a>
-        </div>
-        <form action="userpage.html" th:action="@{/enter}" th:object="${user}" method="post" class="enter-form" id="enter-form">
-            <input type="text" th:field="*{username}" id="enter-form-username" class="enter-form-field" placeholder="Name" autocomplete="off"/>
-            <input type="password" th:field="*{password}" id="enter-form-password" class="enter-form-field" placeholder="Password" autocomplete="off"/>
-            <input type="submit" value="Begin" class="enter-form-enter" />
-            <div class="enter-to-register-button" id="enter-to-register-button">Register</div>
-        </form>
-        <form action="userpage.html" th:action="@{/register}" th:object="${user}" method="post" class="register-form" id="register-form">
-            <input type="text" th:field="*{username}" id="register-form-username" class="enter-form-field" placeholder="Name" autocomplete="off"/>
-            <input type="password" th:field="*{password}" id="register-form-password" class="enter-form-field" placeholder="Password" autocomplete="off"/>
-            <input type="password" id="register-form-password-confirmation" class="enter-form-field" placeholder="Once more" autocomplete="off"/>
-            <input type="submit" value="Register" class="register-form-register" />
-        </form>
-    </div>
-    <script src="../static/js/libs/jquery-3.1.1.js" th:src="@{/js/libs/jquery-3.1.1.js}"></script>
-    <script src="../static/js/js.js" th:src="@{/js/js.js}"></script>
+<main class="index-page-container">
+    <a class="main-site-link" src="#">
+        <img class="site-logo" th:src="@{/img/site-logo-main.png}" src="img/site-logo-main.png" width="103" height="50"/>
+    </a>
+    <form action="userpage.html" th:action="@{/enter}" th:object="${user}" method="post" class="enter-form" id="enter-form">
+        <input type="text" th:field="*{name}" id="enter-form-username" class="enter-form-field" placeholder="Name" autocomplete="off" value="Nikita"/>
+        <input type="password" th:field="*{password}" id="enter-form-password" class="enter-form-field" placeholder="Password" autocomplete="off" value="123"/>
+        <input type="submit" value="Begin" class="enter-form-enter" />
+        <div class="enter-to-register-button" id="enter-to-register-button">Register</div>
+    </form>
+    <form action="userpage.html" th:action="@{/register}" th:object="${user}" method="post" class="register-form" id="register-form">
+        <input type="text" th:field="*{name}" id="register-form-username" class="enter-form-field" placeholder="Name" autocomplete="off"/>
+        <input type="password" th:field="*{password}" id="register-form-password" class="enter-form-field" placeholder="Password" autocomplete="off"/>
+        <input type="password" th:field="*{passwordСheck}" id="register-form-password-confirmation" class="enter-form-field" placeholder="Once more" autocomplete="off"/>
+        <input type="submit" value="Register" class="register-form-register" />
+    </form>
+</main>
+<script src="js/libs/jquery-3.1.1.js" th:src="@{/js/libs/jquery-3.1.1.js}"></script>
+<script src="js/js.js" th:src="@{/js/js.js}"></script>
 </body>
 
 </html>

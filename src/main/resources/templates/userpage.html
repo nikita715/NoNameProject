@@ -1,18 +1,89 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
+
 <head>
-    <title>Getting Started: Handling Form Submission</title>
+    <title>Shelf</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link th:href="@{/style.css}" href="../static/style.css" rel="stylesheet" type="text/css"/>
+    <link th:href="@{/css/style.css}" href="../static/css/style.css" rel="stylesheet" type="text/css" />
+    <link th:href="@{/img/favicon.png}" rel="icon" type="image/png" href="../static/img/favicon.png" />
 </head>
+
 <body>
-    <div class="page-container">
-        <h1>Project Shelf</h1>
-        <h2>Profile</h2>
-        <p th:text="'username: ' + ${user.username}" />
-        <p th:text="'password: ' + ${user.password}" />
-        <p th:text="'num: ' + ${num}" />
-        <a href="/">Submit another message</a>
-    </div>
+<header class="main-header">
+    <a class="main-header-site-link" href="#">
+        <img class="site-logo" th:src="@{/img/site-logo-main.png}" src="../static/img/site-logo-main.png" width="103" height="50" />
+    </a>
+    <button class="user-nav-opener" th:text="${user.name}"></button>
+    <nav class="user-nav">
+        <a href="#">Settings</a>
+        <a href="#">Help</a>
+        <a th:href="@{/exit}">Exit</a>
+    </nav>
+</header>
+<main class="tasks-page">
+    <aside class="tasks-navigation">
+        <a th:classappend="${selector == 'today'} ? tasks-selector-current : ''" class="tasks-selector" id="tasks-selector-today" href="#" th:href="@{/today}">Today</a>
+        <a th:classappend="${selector == 'tomorrow'} ? tasks-selector-current : ''" class="tasks-selector" id="tasks-selector-tomorrow" href="#" th:href="@{/tomorrow}">Tomorrow</a>
+        <a th:classappend="${selector == 'week'} ? tasks-selector-current : ''" class="tasks-selector" id="tasks-selector-week" href="#" th:href="@{/week}">Week</a>
+        <a th:classappend="${selector == 'old'} ? tasks-selector-current : ''" class="tasks-selector" id="tasks-selector-old" href="#" th:href="@{/old}">Old</a>
+    </aside>
+    <section class="tasks">
+        <h4 class="task-add-opener">Add new task</h4>
+        <form th:object="${task}" th:action="@{/add}" class="task-add" id="task-add" method="post">
+            <h2>Add new task</h2>
+            <input th:field="*{name}" class="task-add-name" type="text" name="taskName" value="" placeholder="Task name" maxlength="30" />
+            <input th:field="*{time}" class="task-add-date" type="date" name="taskDate" />
+            <div class="task-add-submit-container">
+                <input class="task-add-submit" type="submit" />
+            </div>
+            <input th:field="*{description}" class="task-add-details" name="taskDetails" value="" placeholder="Task details" />
+            <select th:field="*{priority}" class="task-add-priority" name="taskPriority" form="task-add">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </form>
+        <div th:each="currentDateSet : ${datedTasksSet}" th:classappend="${currentDateSet.overdue} ? tasks-overdue : ''" th:class="tasks-group">
+            <h3 th:text="${currentDateSet.time}" class="tasks-group-date">December, 28</h3>
+            <div th:each="task : ${currentDateSet.tasks}" th:class="'task task-priority-' + ${task.priority}">
+                <span th:text="${task.name}" class="task-name"></span>
+                <button class="task-details-button">Описание</button>
+                <span th:text="${task.time}" class="task-time"></span>
+                <div class="task-complete-button-container">
+                    <button class="task-complete-button">Выполнено</button>
+                </div>
+                <p th:text="${task.description}" class="task-details"></p>
+                <button class="task-delete" th:action="@{'/delete/' + ${task.id}}">&times;</button>
+            </div>
+            <h4 class="task-add-opener">Add new task</h4>
+            <form th:object="${task}" th:action="@{/add}" class="task-add" id="task-add" method="post">
+                <h2>Add new task</h2>
+                <input th:field="*{name}" class="task-add-name" type="text" name="taskName" value="" placeholder="Task name" maxlength="30" />
+                <input th:field="*{time}" class="task-add-date" type="date" name="taskDate" />
+                <div class="task-add-submit-container">
+                    <input class="task-add-submit" type="submit" />
+                </div>
+                <input th:field="*{description}" class="task-add-details" name="taskDetails" value="" placeholder="Task details" />
+                <select th:field="*{priority}" class="task-add-priority" name="taskPriority" form="task-add">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </form>
+        </div>
+    </section>
+</main>
+<!--<div class="settings-mask">-->
+<!--<div class="settings">-->
+
+<!--</div>-->
+<!--</div>-->
+<script src="../static/js/libs/jquery-3.1.1.js" th:src="@{/js/libs/jquery-3.1.1.js}"></script>
+<script src="../static/js/js.js" th:src="@{/js/js.js}"></script>
 </body>
+
 </html>
