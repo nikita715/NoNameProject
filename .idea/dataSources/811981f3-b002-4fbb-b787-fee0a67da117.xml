@@ -4,7 +4,6 @@
     <root id="1"/>
     <schema id="2" parent="1" name="S191976">
       <ObjectId>96</ObjectId>
-      <IntrospectionTimestamp>2017-01-06.18:41:54</IntrospectionTimestamp>
       <CreatedTimestamp>2015-05-12.19:31:15</CreatedTimestamp>
       <ModifiedTimestamp>2017-01-01.21:49:20</ModifiedTimestamp>
       <Current>1</Current>
