@@ -22,10 +22,11 @@
 </header>
 <main class="tasks-page">
     <aside class="tasks-navigation">
-        <a th:classappend="${selector == 'today'} ? tasks-selector-current : ''" class="tasks-selector" id="tasks-selector-today" href="#" th:href="@{/today}">Today</a>
-        <a th:classappend="${selector == 'tomorrow'} ? tasks-selector-current : ''" class="tasks-selector" id="tasks-selector-tomorrow" href="#" th:href="@{/tomorrow}">Tomorrow</a>
-        <a th:classappend="${selector == 'week'} ? tasks-selector-current : ''" class="tasks-selector" id="tasks-selector-week" href="#" th:href="@{/week}">Week</a>
-        <a th:classappend="${selector == 'old'} ? tasks-selector-current : ''" class="tasks-selector" id="tasks-selector-old" href="#" th:href="@{/old}">Old</a>
+        <a th:classappend="${tasksSelector == 'today'} ? tasks-selector-current : ''" class="tasks-selector" id="tasks-selector-today" href="#" th:href="@{/today}">Today</a>
+        <a th:classappend="${tasksSelector == 'tomorrow'} ? tasks-selector-current : ''" class="tasks-selector" id="tasks-selector-tomorrow" href="#" th:href="@{/tomorrow}">Tomorrow</a>
+        <a th:classappend="${tasksSelector == 'week'} ? tasks-selector-current : ''" class="tasks-selector" id="tasks-selector-week" href="#" th:href="@{/week}">Week</a>
+        <a th:classappend="${tasksSelector == 'unfinished'} ? tasks-selector-current : ''" class="tasks-selector" id="tasks-selector-old" href="#" th:href="@{/old}">Unfinished</a>
+        <a th:classappend="${tasksSelector == 'completed'} ? tasks-selector-current : ''" class="tasks-selector" id="tasks-selector-completed" href="#" th:href="@{/completed}">Completed</a>
     </aside>
     <section class="tasks">
         <h4 class="task-add-opener">Add new task</h4>
@@ -46,16 +47,16 @@
             </select>
         </form>
         <div th:each="currentDateSet : ${datedTasksSet}" th:classappend="${currentDateSet.overdue} ? tasks-overdue : ''" th:class="tasks-group">
-            <h3 th:text="${currentDateSet.time}" class="tasks-group-date">December, 28</h3>
+            <h3 th:text="${currentDateSet.time}" class="tasks-group-date"></h3>
             <div th:each="task : ${currentDateSet.tasks}" th:class="'task task-priority-' + ${task.priority}">
                 <span th:text="${task.name}" class="task-name"></span>
                 <button class="task-details-button">Описание</button>
                 <span th:text="${task.time}" class="task-time"></span>
                 <div class="task-complete-button-container">
-                    <button class="task-complete-button">Выполнено</button>
+                    <a class="task-complete-button" th:href="@{'/complete/' + ${task.id}}">Выполнено</a>
                 </div>
                 <p th:text="${task.description}" class="task-details"></p>
-                <button class="task-delete" th:action="@{'/delete/' + ${task.id}}">&times;</button>
+                <a class="task-delete" th:href="@{'/delete/' + ${task.id}}">&times;</a>
             </div>
             <h4 class="task-add-opener">Add new task</h4>
             <form th:object="${task}" th:action="@{/add}" class="task-add" id="task-add" method="post">

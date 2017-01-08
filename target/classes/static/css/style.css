@@ -38,8 +38,7 @@ body {
     display: block;
     width: 103px;
     height: 50px;
-    margin: 0 auto;
-    margin-top: 10px;
+    margin: 10px auto 0;
     text-align: center;
     cursor: pointer;
     overflow: hidden;
@@ -64,13 +63,8 @@ body {
     opacity: 0;
 }
 
-/*
-.main-site-link a:hover {
-    color: #CF2F0C;
-}
-*/
-
 .enter-form {
+    position: relative;
     display: flex;
     width: 170px;
     margin: 0 auto;
@@ -78,6 +72,7 @@ body {
 }
 
 .enter-form-field {
+    position: relative;
     padding: 5px 10px;
     box-sizing: border-box;
     font-family: "Calibri", serif;
@@ -93,7 +88,7 @@ body {
 
 .enter-form-enter {
     padding: 8px 0;
-    font-family: "Calibri";
+    font-family: "Calibri", sans-serif;
     font-weight: bold;
     font-size: 15px;
     border: none;
@@ -107,7 +102,7 @@ body {
     margin-top: 10px;
     padding: 3px 0;
     box-sizing: border-box;
-    font-family: "Calibri";
+    font-family: "Calibri", sans-serif;
     font-weight: bold;
     font-size: 15px;
     text-align: center;
@@ -126,8 +121,50 @@ body {
     color: #CF2F0C;
     border-color: #CF2F0C;
 }
+.enter-wrong-data:after,
+.register-username-taken:before,
+.register-password-mismatch:after {
+    position: absolute;
+    left: 105%;
+    width: 100%;
+    font-size: 14px;
+    color: #A5260A;
+    animation-name: index-form-error;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.enter-wrong-data:after {
+    content: "Try again";
+    top: 17px;
+}
+
+.register-username-taken:before {
+    content: "This name is already taken";
+    top: 17px;
+}
+
+.register-password-mismatch:after {
+    content: "Passwords do not match";
+    top: 57px;
+}
+
+@keyframes index-form-error {
+    from {
+        opacity: 1;
+    }
+    to {
+        display: none;
+        opacity: 0;
+    }
+}
 
 .register-form {
+    position: relative;
     display: none;
     width: 170px;
     margin: 0 auto;
@@ -141,7 +178,7 @@ body {
 .register-form-field {
     padding: 5px 10px;
     box-sizing: border-box;
-    font-family: "Calibri";
+    font-family: "Calibri", sans-serif;
     font-size: 15px;
     border-radius: 2px;
     border: 1px solid #cccccc;
@@ -155,7 +192,7 @@ body {
 
 .register-form-register {
     padding: 8px 0;
-    font-family: "Calibri";
+    font-family: "Calibri", sans-serif;
     font-weight: bold;
     font-size: 15px;
     border: none;
@@ -270,9 +307,7 @@ body {
     display: flex;
     flex-flow: row nowrap;
     width: 768px;
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 100px;
+    margin: 20px auto 100px;
     height: 100%;
 }
 
@@ -331,15 +366,17 @@ body {
     font-weight: normal;
 }
 
+.task-add-opener {
+    color: #aaa;
+}
+
 .task {
     position: relative;
     display: flex;
     flex-flow: row wrap;
     width: 100%;
     box-sizing: border-box;
-    padding: 0;
-    padding-left: 30px;
-    padding-right: 20px;
+    padding: 0 20px 0 30px;
     margin: 3px 0;
     min-height: 40px;
     line-height: 40px;
@@ -362,10 +399,8 @@ body {
     margin-top: 16px;
     margin-left: 5px;
     font-size: 0;
-    background-image: url(../img/details-button.png);
     background-size: cover;
-    background-repeat: no-repeat;
-    background-color: transparent;
+    background: transparent url(../img/details-button.png) no-repeat;
     border: none;
     cursor: pointer;
 }
@@ -392,9 +427,7 @@ body {
     font-size: 0;
     border-radius: 100%;
     border: none;
-    background-color: chocolate;
-    background-image: url(../img/task-complete.png);
-    background-position: 0 0;
+    background: chocolate url(../img/task-complete.png) 0 0;
     background-size: cover;
     cursor: pointer;
 }
@@ -430,9 +463,7 @@ body {
 .task-details {
     display: none;
     flex-basis: 100%;
-    padding: 10px;
-    padding-left: 0;
-    padding-bottom: 20px;
+    padding: 10px 10px 20px 0;
     font-size: 14px;
     line-height: 14px;
 }
@@ -443,9 +474,7 @@ body {
     flex-flow: row wrap;
     width: 100%;
     box-sizing: border-box;
-    padding: 23px;
-    padding-top: 0;
-    padding-left: 30px;
+    padding: 0 23px 23px 30px;
     min-height: 60px;
 }
 
@@ -514,9 +543,8 @@ body {
     width: 27px;
     height: 27px;
     font-size: 0;
-    background-image: url(../img/task-complete-button.png);
     background-size: contain;
-    background-color: #99cc33;
+    background: #99cc33 url(../img/task-complete-button.png);
     border-radius: 100%;
 }
 
@@ -539,6 +567,7 @@ body {
     background-color: transparent;
     color: #ddd;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .task:hover .task-delete {
@@ -546,10 +575,8 @@ body {
 }
 
 .task-add-opener {
-    padding: 0;
-    margin: 0;
-    margin-top: 10px;
-    padding-left: 30px;
+    margin: 10px 0 0;
+    padding: 0 0 0 30px;
     text-decoration: underline;
     cursor: pointer;
     color: #333;

@@ -4,8 +4,9 @@
     <root id="1"/>
     <schema id="2" parent="1" name="S191976">
       <ObjectId>96</ObjectId>
+      <IntrospectionTimestamp>2017-01-07.17:38:58</IntrospectionTimestamp>
       <CreatedTimestamp>2015-05-12.19:31:15</CreatedTimestamp>
-      <ModifiedTimestamp>2017-01-01.21:49:20</ModifiedTimestamp>
+      <ModifiedTimestamp>2017-01-07.17:38:53</ModifiedTimestamp>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -601,7 +602,7 @@
     <table id="169" parent="2" name="TASKS">
       <ObjectId>102724</ObjectId>
       <CreatedTimestamp>2017-01-01.21:49:20</CreatedTimestamp>
-      <ModifiedTimestamp>2017-01-01.21:49:20</ModifiedTimestamp>
+      <ModifiedTimestamp>2017-01-07.17:04:25</ModifiedTimestamp>
     </table>
     <table id="170" parent="2" name="TRUCKS">
       <ObjectId>64514</ObjectId>
@@ -611,7 +612,7 @@
     <table id="171" parent="2" name="USERS">
       <ObjectId>102720</ObjectId>
       <CreatedTimestamp>2017-01-01.21:49:19</CreatedTimestamp>
-      <ModifiedTimestamp>2017-01-01.21:49:20</ModifiedTimestamp>
+      <ModifiedTimestamp>2017-01-07.17:38:53</ModifiedTimestamp>
     </table>
     <routine id="172" parent="2" name="RETURN_IDENTIFIER">
       <ObjectId>73936</ObjectId>
@@ -1283,7 +1284,11 @@
       <Position>6</Position>
       <DataType>VARCHAR2(200)|0</DataType>
     </column>
-    <index id="287" parent="169" name="SYS_C0043166">
+    <column id="287" parent="169" name="COMPLETED">
+      <Position>7</Position>
+      <DataType>NUMBER(1)|0</DataType>
+    </column>
+    <index id="288" parent="169" name="SYS_C0043166">
       <ObjectId>102725</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <CreatedTimestamp>2017-01-01.21:49:20</CreatedTimestamp>
@@ -1292,7 +1297,7 @@
       <ColNames>ID</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="288" parent="169" name="SYS_C0043166">
+    <key id="289" parent="169" name="SYS_C0043166">
       <NameSurrogate>1</NameSurrogate>
       <ModifiedTimestamp>2017-01-01.21:49:20</ModifiedTimestamp>
       <ColNames>ID</ColNames>
@@ -1300,7 +1305,7 @@
       <UnderlyingIndexName>SYS_C0043166</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="289" parent="169" name="SYS_C0043167">
+    <foreign-key id="290" parent="169" name="SYS_C0043167">
       <NameSurrogate>1</NameSurrogate>
       <ModifiedTimestamp>2017-01-01.21:49:20</ModifiedTimestamp>
       <ColNames>USER_ID</ColNames>
@@ -1308,7 +1313,7 @@
       <RefTableName>USERS</RefTableName>
       <RefKeyName>SYS_C0043162</RefKeyName>
     </foreign-key>
-    <foreign-key id="290" parent="169" name="SYS_C0043168">
+    <foreign-key id="291" parent="169" name="SYS_C0043168">
       <NameSurrogate>1</NameSurrogate>
       <ModifiedTimestamp>2017-01-01.21:49:20</ModifiedTimestamp>
       <ColNames>PRIORITY</ColNames>
@@ -1316,42 +1321,42 @@
       <RefTableName>PRIORITIES</RefTableName>
       <RefKeyName>SYS_C0043163</RefKeyName>
     </foreign-key>
-    <trigger id="291" parent="169" name="TASKS_ID_TRIGGER">
+    <trigger id="292" parent="169" name="TASKS_ID_TRIGGER">
       <ObjectId>102715</ObjectId>
       <CreatedTimestamp>2017-01-01.21:49:20</CreatedTimestamp>
       <ModifiedTimestamp>2017-01-01.21:49:20</ModifiedTimestamp>
       <Events>I</Events>
       <Turn>before-row</Turn>
     </trigger>
-    <column id="292" parent="170" name="ID">
+    <column id="293" parent="170" name="ID">
       <Position>1</Position>
       <DataType>NUMBER(10)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="293" parent="170" name="NAME">
+    <column id="294" parent="170" name="NAME">
       <Position>2</Position>
       <DataType>VARCHAR2(20)|0</DataType>
     </column>
-    <column id="294" parent="170" name="T_NUMBER">
+    <column id="295" parent="170" name="T_NUMBER">
       <Position>3</Position>
       <DataType>VARCHAR2(6)|0</DataType>
     </column>
-    <column id="295" parent="170" name="LENGTH">
+    <column id="296" parent="170" name="LENGTH">
       <Position>4</Position>
       <DataType>FLOAT(10)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="296" parent="170" name="WIDTH">
+    <column id="297" parent="170" name="WIDTH">
       <Position>5</Position>
       <DataType>FLOAT(10)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="297" parent="170" name="HEIGHT">
+    <column id="298" parent="170" name="HEIGHT">
       <Position>6</Position>
       <DataType>FLOAT(10)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="298" parent="170" name="SYS_C0026976">
+    <index id="299" parent="170" name="SYS_C0026976">
       <ObjectId>64515</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <CreatedTimestamp>2016-01-18.17:40:06</CreatedTimestamp>
@@ -1360,7 +1365,7 @@
       <ColNames>ID</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="299" parent="170" name="SYS_C0026976">
+    <key id="300" parent="170" name="SYS_C0026976">
       <NameSurrogate>1</NameSurrogate>
       <ModifiedTimestamp>2016-01-18.17:40:06</ModifiedTimestamp>
       <ColNames>ID</ColNames>
@@ -1368,29 +1373,29 @@
       <UnderlyingIndexName>SYS_C0026976</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <trigger id="300" parent="170" name="TRUCKS_T">
+    <trigger id="301" parent="170" name="TRUCKS_T">
       <ObjectId>64492</ObjectId>
       <CreatedTimestamp>2016-01-18.17:40:43</CreatedTimestamp>
       <ModifiedTimestamp>2016-01-18.17:40:43</ModifiedTimestamp>
       <Events>I</Events>
       <Turn>before-row</Turn>
     </trigger>
-    <column id="301" parent="171" name="ID">
+    <column id="302" parent="171" name="ID">
       <Position>1</Position>
       <DataType>NUMBER(12)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="302" parent="171" name="NAME">
+    <column id="303" parent="171" name="NAME">
       <Position>2</Position>
       <DataType>VARCHAR2(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="303" parent="171" name="PASSWORD">
+    <column id="304" parent="171" name="PASSWORD">
       <Position>3</Position>
       <DataType>VARCHAR2(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="304" parent="171" name="SYS_C0043162">
+    <index id="305" parent="171" name="SYS_C0043162">
       <ObjectId>102721</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <CreatedTimestamp>2017-01-01.21:49:19</CreatedTimestamp>
@@ -1399,7 +1404,16 @@
       <ColNames>ID</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="305" parent="171" name="SYS_C0043162">
+    <index id="306" parent="171" name="SYS_C0043239">
+      <ObjectId>103249</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2017-01-07.17:38:53</CreatedTimestamp>
+      <ModifiedTimestamp>2017-01-07.17:38:53</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>NAME</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="307" parent="171" name="SYS_C0043162">
       <NameSurrogate>1</NameSurrogate>
       <ModifiedTimestamp>2017-01-01.21:49:19</ModifiedTimestamp>
       <ColNames>ID</ColNames>
@@ -1407,21 +1421,28 @@
       <UnderlyingIndexName>SYS_C0043162</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <trigger id="306" parent="171" name="USERS_ID_TRIGGER">
+    <key id="308" parent="171" name="SYS_C0043239">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-01-07.17:38:54</ModifiedTimestamp>
+      <ColNames>NAME</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C0043239</UnderlyingIndexName>
+    </key>
+    <trigger id="309" parent="171" name="USERS_ID_TRIGGER">
       <ObjectId>102710</ObjectId>
       <CreatedTimestamp>2017-01-01.21:49:20</CreatedTimestamp>
       <ModifiedTimestamp>2017-01-01.21:49:20</ModifiedTimestamp>
       <Events>I</Events>
       <Turn>before-row</Turn>
     </trigger>
-    <argument id="307" parent="172">
+    <argument id="310" parent="172">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>VARCHAR2|0</DataType>
     </argument>
-    <argument id="308" parent="172" name="LN">
+    <argument id="311" parent="172" name="LN">
       <DataType>VARCHAR2|0</DataType>
     </argument>
-    <argument id="309" parent="172" name="FN">
+    <argument id="312" parent="172" name="FN">
       <DataType>VARCHAR2|0</DataType>
     </argument>
   </database-model>

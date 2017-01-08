@@ -1,19 +1,16 @@
 package ru.ifmo.shelf.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import ru.ifmo.shelf.jdbc.TaskDao;
-import ru.ifmo.shelf.jdbc.UserDao;
-import ru.ifmo.shelf.model.DatedTasksGroup;
+import org.springframework.web.bind.annotation.*;
+import ru.ifmo.shelf.jdbc.impl.TaskDao;
+import ru.ifmo.shelf.jdbc.impl.UserDao;
 import ru.ifmo.shelf.model.Task;
 import ru.ifmo.shelf.model.User;
 
 import java.sql.SQLException;
 import java.text.ParseException;
-import java.util.LinkedHashSet;
 
 /**
  * Created by nikge on 08.11.2016.
@@ -22,13 +19,15 @@ import java.util.LinkedHashSet;
 @Controller
 public class UserController {
 
-    private static UserDao userDao;
-    private static TaskDao taskDao;
+    private final UserDao userDao;
+    private final TaskDao taskDao;
+
     private static User currentUser;
 
-    UserController() throws SQLException {
-        userDao = new UserDao();
-        taskDao = new TaskDao();
+    @Autowired
+    public UserController(UserDao userDao, TaskDao taskDao) {
+        this.userDao = userDao;
+        this.taskDao = taskDao;
     }
 
     @GetMapping("/")
@@ -44,11 +43,7 @@ public class UserController {
         }
         model.addAttribute("user", currentUser);
         model.addAttribute("task", new Task());
-
-        LinkedHashSet<DatedTasksGroup> tasksGroups =  taskDao.getOldTasks(currentUser);
-        tasksGroups.addAll(taskDao.getTodayTasks(currentUser));
-
-        model.addAttribute("datedTasksSet", tasksGroups);
+        model.addAttribute("datedTasksSet", taskDao.getInitialTasks(currentUser));
         model.addAttribute("tasksSelector", "today");
         return "userpage";
     }
@@ -60,7 +55,7 @@ public class UserController {
         }
         model.addAttribute("user", currentUser);
         model.addAttribute("task", new Task());
-        model.addAttribute("datedTasksSet", taskDao.getTodayTasks(currentUser));
+        model.addAttribute("datedTasksSet", taskDao.getTasksForToday(currentUser));
         model.addAttribute("tasksSelector", "today");
         return "userpage";
     }
@@ -72,7 +67,7 @@ public class UserController {
         }
         model.addAttribute("user", currentUser);
         model.addAttribute("task", new Task());
-        model.addAttribute("datedTasksSet", taskDao.getTomorrowTasks(currentUser));
+        model.addAttribute("datedTasksSet", taskDao.getTasksForTomorrow(currentUser));
         model.addAttribute("tasksSelector", "tomorrow");
         return "userpage";
     }
@@ -84,20 +79,32 @@ public class UserController {
         }
         model.addAttribute("user", currentUser);
         model.addAttribute("task", new Task());
-        model.addAttribute("datedTasksSet", taskDao.getWeekTasks(currentUser));
+        model.addAttribute("datedTasksSet", taskDao.getTasksForWeek(currentUser));
         model.addAttribute("tasksSelector", "week");
         return "userpage";
     }
 
-    @GetMapping("/old")
+    @GetMapping("/unfinished")
     public String oldTasks(Model model) throws SQLException, ParseException {
         if (currentUser == null) {
             return "redirect:/";
         }
         model.addAttribute("user", currentUser);
         model.addAttribute("task", new Task());
-        model.addAttribute("datedTasksSet", taskDao.getOldTasks(currentUser));
-        model.addAttribute("tasksSelector", "old");
+        model.addAttribute("datedTasksSet", taskDao.getUnfinishedTasks(currentUser));
+        model.addAttribute("tasksSelector", "unfinished");
+        return "userpage";
+    }
+
+    @GetMapping("/completed")
+    public String completedTasks(Model model) throws SQLException, ParseException {
+        if (currentUser == null) {
+            return "redirect:/";
+        }
+        model.addAttribute("user", currentUser);
+        model.addAttribute("task", new Task());
+        model.addAttribute("datedTasksSet", taskDao.getCompletedTasks(currentUser));
+        model.addAttribute("tasksSelector", "completed");
         return "userpage";
     }
 
@@ -112,8 +119,9 @@ public class UserController {
     }
 
     @PostMapping("/enter")
-    public String enterSite(@ModelAttribute User user) throws SQLException {
+    public String enterSite(Model model, @ModelAttribute User user) throws SQLException {
         if (userDao.connect(user) == 0) {
+            model.addAttribute("error", "wrongEnterData");
             return "redirect:/";
         } else {
             user.setId(userDao.connect(user));
@@ -129,14 +137,36 @@ public class UserController {
     }
 
     @PostMapping("/register")
-    public String registerSite(@ModelAttribute User user) throws SQLException {
-        if (user.getPasswordСheck().equals(user.getPassword())) {
+    public String registerSite(Model model, @ModelAttribute User user) throws SQLException {
+        if (userDao.nameAlreadyTaken(user)) {
+            model.addAttribute("error", "usernameTaken");
+            return "redirect:/";
+        } else if (!user.getPasswordСheck().equals(user.getPassword())) {
+            model.addAttribute("error", "passwordMismatch");
+            return "redirect:/";
+        } else {
             userDao.insert(user);
             user.setId(userDao.connect(user));
             currentUser = user;
             return "redirect:/userpage";
-        } else {
+        }
+    }
+
+    @GetMapping("/delete/{id}")
+    public String deleteTask(@PathVariable int id) throws SQLException {
+        if (currentUser == null) {
             return "redirect:/";
         }
+        taskDao.delete(id);
+        return "redirect:/userpage";
+    }
+
+    @GetMapping("/complete/{id}")
+    public String completeTask(@PathVariable int id) throws SQLException {
+        if (currentUser == null) {
+            return "redirect:/";
+        }
+        taskDao.complete(id);
+        return "redirect:/userpage";
     }
 }

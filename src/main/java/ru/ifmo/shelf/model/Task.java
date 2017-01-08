@@ -10,13 +10,14 @@ public class Task {
 
     public Task() {}
 
-    public Task(int id, int user, String name, String time, int priority, String description) {
+    public Task(int id, int user, String name, String time, int priority, String description, Boolean completed) {
         this.id = id;
         this.user = user;
         this.name = name;
         this.time = time;
         this.priority = priority;
         this.description = description;
+        this.completed = completed;
     }
 
     @Id
@@ -38,6 +39,9 @@ public class Task {
 
     @Column(name = "DESCRIPTION")
     private String description;
+
+    @Column(name = "COMPLETED")
+    private Boolean completed;
 
     public int getId() {
         return id;
@@ -85,5 +89,13 @@ public class Task {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public Boolean getCompleted() {
+        return completed;
+    }
+
+    public void setCompleted(Boolean completed) {
+        this.completed = completed;
     }
 }
