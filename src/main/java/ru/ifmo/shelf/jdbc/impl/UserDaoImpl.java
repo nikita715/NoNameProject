@@ -1,10 +1,9 @@
 package ru.ifmo.shelf.jdbc.impl;
 
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.support.GenericXmlApplicationContext;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
-import ru.ifmo.shelf.jdbc.IUserDao;
+import ru.ifmo.shelf.jdbc.UserDao;
 import ru.ifmo.shelf.model.User;
 
 import javax.sql.DataSource;
@@ -15,12 +14,11 @@ import java.util.Locale;
  * Created by nikge on 14.12.2016.
  */
 @Repository
-@EnableAutoConfiguration
-public class UserDao implements IUserDao {
+public class UserDaoImpl implements UserDao {
 
-    private JdbcTemplate jdbcTemplate;
+    private final JdbcTemplate jdbcTemplate;
 
-    public UserDao() {
+    public UserDaoImpl() {
         Locale.setDefault(Locale.US);
         GenericXmlApplicationContext ctx = new GenericXmlApplicationContext();
         ctx.load("application-context.xml");

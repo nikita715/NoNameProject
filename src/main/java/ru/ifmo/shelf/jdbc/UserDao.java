@@ -4,7 +4,7 @@ import ru.ifmo.shelf.model.User;
 
 import java.sql.SQLException;
 
-public interface IUserDao {
+public interface UserDao {
 
     void insert(User user) throws SQLException;
 

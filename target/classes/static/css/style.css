@@ -400,7 +400,7 @@ body {
     margin-left: 5px;
     font-size: 0;
     background-size: cover;
-    background: transparent url(../img/details-button.png) no-repeat;
+    background: url(../img/details-button.png) no-repeat;
     border: none;
     cursor: pointer;
 }
@@ -417,10 +417,12 @@ body {
 .task-complete-button-container {
     position: absolute;
     right: 30px;
+    top: 5px;
     flex-basis: 5%;
 }
 
 .task-complete-button {
+    display: block;
     width: 27px;
     height: 27px;
     vertical-align: middle;
@@ -586,11 +588,24 @@ body {
     color: #99cc33;
 }
 
+.tasks-completed h3:after {
+    content: " completed";
+    font-size: 14px;
+    color: #99cc33;
+    font-weight: 700;
+}
+
 .tasks-overdue h3:after {
     content: " overdue";
     font-size: 14px;
     color: #A5260A;
     font-weight: 700;
+}
+
+.tasks-completed .task-complete-button {
+    background-position: -27px 0;
+    pointer-events: none;
+    cursor: default;
 }
 
 .settings-mask {

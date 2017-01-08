@@ -13,6 +13,8 @@ public class DatedTasksGroup {
 
     private Boolean overdue;
 
+    private Boolean completed;
+
     public String getTime() {
         return time;
     }
@@ -35,5 +37,13 @@ public class DatedTasksGroup {
 
     public void setOverdue(Boolean overdue) {
         this.overdue = overdue;
+    }
+
+    public Boolean getCompleted() {
+        return completed;
+    }
+
+    public void setCompleted(Boolean completed) {
+        this.completed = completed;
     }
 }

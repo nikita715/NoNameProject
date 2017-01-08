@@ -30,6 +30,9 @@ $(document).ready(function () {
             user_nav_condition = 0;
         }
     });
+    $('.user-nav-opener').hover(function () {
+        $('.user-nav-opener').css('background-color', '#F5F5F5');
+    });
 //    $('.main-header-site-link').mouseover(function () {
 //        $(this).children().attr('src', "../static/img/site-logo-main-bright.png");
 //    });
@@ -57,10 +60,6 @@ $(document).ready(function () {
 //        }
         if ($('.task-details').parent().has(e.target).length === 0) {
             $('.task-details').css('display', 'none');
-        }
-        if ($('.task-add').parent().has(e.target).length === 0) {
-            $('.task-add').css('display', 'none');
-            $('h4').css('display', 'block');
         }
     });
 

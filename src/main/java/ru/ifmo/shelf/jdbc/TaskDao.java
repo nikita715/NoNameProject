@@ -11,7 +11,7 @@ import java.util.LinkedHashSet;
 /**
  * Created by nikge on 07.01.2017.
  */
-public interface ITaskDao {
+public interface TaskDao {
 
     void insert(Task task) throws SQLException;
 

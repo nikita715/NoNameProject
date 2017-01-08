@@ -10,7 +10,7 @@
 
 <body>
 <header class="main-header">
-    <a class="main-header-site-link" href="#">
+    <a class="main-header-site-link" th:href="@{'/'+${user.name}}">
         <img class="site-logo" th:src="@{/img/site-logo-main.png}" src="../static/img/site-logo-main.png" width="103" height="50" />
     </a>
     <button class="user-nav-opener" th:text="${user.name}"></button>
@@ -22,15 +22,15 @@
 </header>
 <main class="tasks-page">
     <aside class="tasks-navigation">
-        <a th:classappend="${tasksSelector == 'today'} ? tasks-selector-current : ''" class="tasks-selector" id="tasks-selector-today" href="#" th:href="@{/today}">Today</a>
-        <a th:classappend="${tasksSelector == 'tomorrow'} ? tasks-selector-current : ''" class="tasks-selector" id="tasks-selector-tomorrow" href="#" th:href="@{/tomorrow}">Tomorrow</a>
-        <a th:classappend="${tasksSelector == 'week'} ? tasks-selector-current : ''" class="tasks-selector" id="tasks-selector-week" href="#" th:href="@{/week}">Week</a>
-        <a th:classappend="${tasksSelector == 'unfinished'} ? tasks-selector-current : ''" class="tasks-selector" id="tasks-selector-old" href="#" th:href="@{/old}">Unfinished</a>
-        <a th:classappend="${tasksSelector == 'completed'} ? tasks-selector-current : ''" class="tasks-selector" id="tasks-selector-completed" href="#" th:href="@{/completed}">Completed</a>
+        <a th:classappend="${tasksSelector == 'today'} ? tasks-selector-current : ''" class="tasks-selector" id="tasks-selector-today" href="#" th:href="@{'/'+${user.name}+'/today'}">Today</a>
+        <a th:classappend="${tasksSelector == 'tomorrow'} ? tasks-selector-current : ''" class="tasks-selector" id="tasks-selector-tomorrow" href="#" th:href="@{'/'+${user.name}+'/tomorrow'}">Tomorrow</a>
+        <a th:classappend="${tasksSelector == 'week'} ? tasks-selector-current : ''" class="tasks-selector" id="tasks-selector-week" href="#" th:href="@{'/'+${user.name}+'/week'}">Week</a>
+        <a th:classappend="${tasksSelector == 'unfinished'} ? tasks-selector-current : ''" class="tasks-selector" id="tasks-selector-old" href="#" th:href="@{'/'+${user.name}+'/unfinished'}">Unfinished</a>
+        <a th:classappend="${tasksSelector == 'completed'} ? tasks-selector-current : ''" class="tasks-selector" id="tasks-selector-completed" href="#" th:href="@{'/'+${user.name}+'/completed'}">Completed</a>
     </aside>
     <section class="tasks">
         <h4 class="task-add-opener">Add new task</h4>
-        <form th:object="${task}" th:action="@{/add}" class="task-add" id="task-add" method="post">
+        <form th:object="${task}" th:action="@{'/'+${user.name}+'/add'}" class="task-add" id="task-add" method="post">
             <h2>Add new task</h2>
             <input th:field="*{name}" class="task-add-name" type="text" name="taskName" value="" placeholder="Task name" maxlength="30" />
             <input th:field="*{time}" class="task-add-date" type="date" name="taskDate" />
@@ -46,20 +46,20 @@
                 <option value="5">5</option>
             </select>
         </form>
-        <div th:each="currentDateSet : ${datedTasksSet}" th:classappend="${currentDateSet.overdue} ? tasks-overdue : ''" th:class="tasks-group">
+        <div th:each="currentDateSet : ${datedTasksSet}" th:attr="class=${currentDateSet.completed} ? 'tasks-completed tasks-group' : 'tasks-group'" th:classappend="${currentDateSet.overdue} ? 'tasks-overdue'">
             <h3 th:text="${currentDateSet.time}" class="tasks-group-date"></h3>
             <div th:each="task : ${currentDateSet.tasks}" th:class="'task task-priority-' + ${task.priority}">
                 <span th:text="${task.name}" class="task-name"></span>
                 <button class="task-details-button">Описание</button>
                 <span th:text="${task.time}" class="task-time"></span>
                 <div class="task-complete-button-container">
-                    <a class="task-complete-button" th:href="@{'/complete/' + ${task.id}}">Выполнено</a>
+                    <a class="task-complete-button" th:href="@{'/' + ${user.name} + '/complete/' + ${task.id}}">Выполнено</a>
                 </div>
                 <p th:text="${task.description}" class="task-details"></p>
-                <a class="task-delete" th:href="@{'/delete/' + ${task.id}}">&times;</a>
+                <a class="task-delete" th:href="@{'/' + ${user.name} + '/delete/' + ${task.id}}">&times;</a>
             </div>
-            <h4 class="task-add-opener">Add new task</h4>
-            <form th:object="${task}" th:action="@{/add}" class="task-add" id="task-add" method="post">
+            <h4 th:if="!${currentDateSet.completed} and !${currentDateSet.overdue}" class="task-add-opener">Add new task</h4>
+            <form th:if="!${currentDateSet.completed} and !${currentDateSet.overdue}" th:object="${task}" th:action="@{'/' + ${user.name} + '/add'}" class="task-add" id="task-add" method="post">
                 <h2>Add new task</h2>
                 <input th:field="*{name}" class="task-add-name" type="text" name="taskName" value="" placeholder="Task name" maxlength="30" />
                 <input th:field="*{time}" class="task-add-date" type="date" name="taskDate" />
