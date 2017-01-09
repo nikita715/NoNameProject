@@ -1,6 +1,6 @@
 package ru.ifmo.shelf.jdbc.impl;
 
-import org.springframework.context.support.GenericXmlApplicationContext;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.support.rowset.SqlRowSet;
 import org.springframework.stereotype.Repository;
@@ -15,7 +15,6 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.LinkedHashSet;
-import java.util.Locale;
 
 /**
  * Created by nikge on 18.12.2016.
@@ -29,36 +28,33 @@ public class TaskDaoImpl implements TaskDao {
 
     private final JdbcTemplate jdbcTemplate;
 
-    public TaskDaoImpl() throws SQLException {
-        Locale.setDefault(Locale.US);
-        GenericXmlApplicationContext ctx = new GenericXmlApplicationContext();
-        ctx.load("application-context.xml");
-        ctx.refresh();
-        this.jdbcTemplate = new JdbcTemplate(ctx.getBean ( "springDataSource", DataSource.class));
+    @Autowired
+    public TaskDaoImpl(DataSource dataSource) {
+        jdbcTemplate = new JdbcTemplate(dataSource);
     }
 
     @Override
     public void insert(Task task) throws SQLException {
-        jdbcTemplate.update("INSERT INTO TASKS (USER_ID, NAME, DESCRIPTION, PRIORITY, TIME, COMPLETED) VALUES (" + task.getUser() + ", '" + task.getName() + "', '" + task.getDescription() + "', '" + task.getPriority() + "', TO_DATE('" + task.getTime() + "', 'yyyy-MM-DD'), 0)");
+        jdbcTemplate.update("INSERT INTO TASKS (USER_ID, NAME, DESCRIPTION, PRIORITY, END_DATE, COMPLETED) VALUES (" + task.getUser() + ", '" + task.getName() + "', '" + task.getDescription() + "', '" + task.getPriority() + "', TO_DATE('" + task.getEndDate() + "', 'yyyy-MM-DD'), 0)");
     }
 
     @Override
-    public void updatePriority(int id, int priority) throws SQLException {
+    public void changePriority(int id, int priority) throws SQLException {
         jdbcTemplate.update("UPDATE TASKS SET PRIORITY = '" + priority + "' WHERE ID = " + id);
     }
 
     @Override
-    public void updateName(int id, String name) throws SQLException {
+    public void changeName(int id, String name) throws SQLException {
         jdbcTemplate.update("UPDATE TASKS SET NAME = '" + name + "' WHERE ID = " + id);
     }
 
     @Override
-    public void updateTime(int id, String time) throws SQLException {
-        jdbcTemplate.update("UPDATE TASKS SET TIME = '" + time + "' WHERE ID = " + id);
+    public void changeTime(int id, String time) throws SQLException {
+        jdbcTemplate.update("UPDATE TASKS SET END_DATE = '" + time + "' WHERE ID = " + id);
     }
 
     @Override
-    public void updateDescription(int id, String description) throws SQLException {
+    public void changeDescription(int id, String description) throws SQLException {
         jdbcTemplate.update("UPDATE TASKS SET DESCRIPTION = '" + description + "' WHERE ID = " + id);
     }
 
@@ -84,7 +80,7 @@ public class TaskDaoImpl implements TaskDao {
             int priority = resultSet.getInt("PRIORITY");
             String name = resultSet.getString("NAME");
             String description = resultSet.getString("DESCRIPTION");
-            Date date = dateFormatDB.parse(resultSet.getString("TIME"));
+            Date date = dateFormatDB.parse(resultSet.getString("END_DATE"));
             String taskDate = dateFormatTask.format(date);
             Boolean completed = resultSet.getBoolean("COMPLETED");
             Task task = new Task(id, userId, name, taskDate, priority, description, currentDateCompleted);
@@ -135,21 +131,21 @@ public class TaskDaoImpl implements TaskDao {
     @Override
     public LinkedHashSet<DatedTasksGroup> getUnfinishedTasks(User user) throws SQLException, ParseException {
         Date currentDate = new Date(System.currentTimeMillis());
-        String sql = "SELECT * FROM TASKS WHERE USER_ID = " + user.getId() + " AND COMPLETED = 0 AND TIME < TO_DATE('" + dateFormatDB.format(currentDate) + "', 'YYYY-MM-DD') ORDER BY TIME, PRIORITY DESC";
+        String sql = "SELECT * FROM TASKS WHERE USER_ID = " + user.getId() + " AND COMPLETED = 0 AND END_DATE < TO_DATE('" + dateFormatDB.format(currentDate) + "', 'YYYY-MM-DD') ORDER BY END_DATE, PRIORITY DESC";
         return resultSetToDatedTasksSet(jdbcTemplate.queryForRowSet(sql));
     }
 
     @Override
     public LinkedHashSet<DatedTasksGroup> getTasksForToday(User user) throws SQLException, ParseException {
         Date currentDate = new Date(System.currentTimeMillis());
-        String sql = "SELECT * FROM TASKS WHERE USER_ID = " + user.getId() + " AND COMPLETED = 0 AND TIME = TO_DATE('" + dateFormatDB.format(currentDate) + "', 'YYYY-MM-DD') ORDER BY TIME, PRIORITY DESC";
+        String sql = "SELECT * FROM TASKS WHERE USER_ID = " + user.getId() + " AND COMPLETED = 0 AND END_DATE = TO_DATE('" + dateFormatDB.format(currentDate) + "', 'YYYY-MM-DD') ORDER BY END_DATE, PRIORITY DESC";
         return resultSetToDatedTasksSet(jdbcTemplate.queryForRowSet(sql));
     }
 
     @Override
     public LinkedHashSet<DatedTasksGroup> getTasksForTomorrow(User user) throws SQLException, ParseException {
         Date tomorrowDate = new Date(System.currentTimeMillis() + 86400000);
-        String sql = "SELECT * FROM TASKS WHERE USER_ID = " + user.getId() + " AND COMPLETED = 0 AND TIME = TO_DATE('" + dateFormatDB.format(tomorrowDate) + "', 'YYYY-MM-DD') ORDER BY TIME, PRIORITY DESC";
+        String sql = "SELECT * FROM TASKS WHERE USER_ID = " + user.getId() + " AND COMPLETED = 0 AND END_DATE = TO_DATE('" + dateFormatDB.format(tomorrowDate) + "', 'YYYY-MM-DD') ORDER BY END_DATE, PRIORITY DESC";
         return resultSetToDatedTasksSet(jdbcTemplate.queryForRowSet(sql));
     }
 
@@ -157,20 +153,20 @@ public class TaskDaoImpl implements TaskDao {
     public LinkedHashSet<DatedTasksGroup> getTasksForWeek(User user) throws SQLException, ParseException {
         Date currentDate = new Date(System.currentTimeMillis());
         Date dateAfterWeek = new Date(System.currentTimeMillis() + 518400000);
-        String sql = "SELECT * FROM TASKS WHERE USER_ID = " + user.getId() + " AND COMPLETED = 0 AND TIME >= TO_DATE('" + dateFormatDB.format(currentDate) + "', 'YYYY-MM-DD') AND TIME <= TO_DATE('" + dateFormatDB.format(dateAfterWeek) + "', 'YYYY-MM-DD') ORDER BY TIME, PRIORITY DESC";
+        String sql = "SELECT * FROM TASKS WHERE USER_ID = " + user.getId() + " AND COMPLETED = 0 AND END_DATE >= TO_DATE('" + dateFormatDB.format(currentDate) + "', 'YYYY-MM-DD') AND END_DATE <= TO_DATE('" + dateFormatDB.format(dateAfterWeek) + "', 'YYYY-MM-DD') ORDER BY END_DATE, PRIORITY DESC";
         return resultSetToDatedTasksSet(jdbcTemplate.queryForRowSet(sql));
     }
 
     @Override
     public LinkedHashSet<DatedTasksGroup> getCompletedTasks(User user) throws SQLException, ParseException {
-        String sql = "SELECT * FROM TASKS WHERE USER_ID = " + user.getId() + " AND COMPLETED = 1 ORDER BY TIME DESC, PRIORITY DESC";
+        String sql = "SELECT * FROM TASKS WHERE USER_ID = " + user.getId() + " AND COMPLETED = 1 ORDER BY END_DATE DESC, PRIORITY DESC";
         return resultSetToDatedTasksSet(jdbcTemplate.queryForRowSet(sql));
     }
 
     @Override
     public LinkedHashSet<DatedTasksGroup> getInitialTasks(User user) throws SQLException, ParseException {
         Date currentDate = new Date(System.currentTimeMillis());
-        String sql = "SELECT * FROM TASKS WHERE USER_ID = " + user.getId() + " AND COMPLETED = 0 AND TIME <= TO_DATE('" + dateFormatDB.format(currentDate) + "', 'YYYY-MM-DD') ORDER BY TIME, PRIORITY DESC";
+        String sql = "SELECT * FROM TASKS WHERE USER_ID = " + user.getId() + " AND COMPLETED = 0 AND END_DATE <= TO_DATE('" + dateFormatDB.format(currentDate) + "', 'YYYY-MM-DD') ORDER BY END_DATE, PRIORITY DESC";
         return resultSetToDatedTasksSet(jdbcTemplate.queryForRowSet(sql));
     }
 }

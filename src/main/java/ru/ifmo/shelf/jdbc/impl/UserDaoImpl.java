@@ -1,6 +1,6 @@
 package ru.ifmo.shelf.jdbc.impl;
 
-import org.springframework.context.support.GenericXmlApplicationContext;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 import ru.ifmo.shelf.jdbc.UserDao;
@@ -8,7 +8,6 @@ import ru.ifmo.shelf.model.User;
 
 import javax.sql.DataSource;
 import java.sql.SQLException;
-import java.util.Locale;
 
 /**
  * Created by nikge on 14.12.2016.
@@ -18,12 +17,9 @@ public class UserDaoImpl implements UserDao {
 
     private final JdbcTemplate jdbcTemplate;
 
-    public UserDaoImpl() {
-        Locale.setDefault(Locale.US);
-        GenericXmlApplicationContext ctx = new GenericXmlApplicationContext();
-        ctx.load("application-context.xml");
-        ctx.refresh();
-        this.jdbcTemplate = new JdbcTemplate(ctx.getBean ( "springDataSource", DataSource.class));
+    @Autowired
+    public UserDaoImpl(DataSource dataSource) {
+        jdbcTemplate = new JdbcTemplate(dataSource);
     }
 
     @Override
@@ -32,12 +28,12 @@ public class UserDaoImpl implements UserDao {
     }
 
     @Override
-    public void updateName(User user) throws SQLException {
+    public void changeName(User user) throws SQLException {
         jdbcTemplate.update("UPDATE USERS SET NAME = '" + user.getName() + "' WHERE ID = " + user.getId());
     }
 
     @Override
-    public void updatePassword(User user) throws SQLException {
+    public void changePassword(User user) throws SQLException {
         jdbcTemplate.update("UPDATE USERS SET PASSWORD = '" + user.getPassword() + "', WHERE ID = " + user.getId());
     }
 
@@ -56,7 +52,7 @@ public class UserDaoImpl implements UserDao {
     }
 
     @Override
-    public Boolean nameAlreadyTaken(User user) throws SQLException {
+    public boolean nameAlreadyTaken(User user) throws SQLException {
         int count = jdbcTemplate.queryForObject("SELECT COUNT(ID) FROM USERS WHERE NAME = '" + user.getName() + "'", new Object[]{}, Integer.class);
         return count > 0;
     }

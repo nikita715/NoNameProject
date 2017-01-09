@@ -7,8 +7,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import ru.ifmo.shelf.jdbc.impl.TaskDaoImpl;
-import ru.ifmo.shelf.jdbc.impl.UserDaoImpl;
+import ru.ifmo.shelf.jdbc.CategoryDao;
+import ru.ifmo.shelf.jdbc.TaskDao;
+import ru.ifmo.shelf.jdbc.UserDao;
 import ru.ifmo.shelf.model.Task;
 import ru.ifmo.shelf.model.User;
 
@@ -23,15 +24,17 @@ import java.text.ParseException;
 @Controller
 public class UserController {
 
-    private final UserDaoImpl userDaoImpl;
-    private final TaskDaoImpl taskDaoImpl;
+    private final UserDao userDao;
+    private final TaskDao taskDao;
+    private final CategoryDao categoryDao;
 
     private static User currentUser;
 
     @Autowired
-    public UserController(UserDaoImpl userDaoImpl, TaskDaoImpl taskDaoImpl) {
-        this.userDaoImpl = userDaoImpl;
-        this.taskDaoImpl = taskDaoImpl;
+    public UserController(UserDao userDao, TaskDao taskDao, CategoryDao categoryDao) {
+        this.userDao = userDao;
+        this.taskDao = taskDao;
+        this.categoryDao = categoryDao;
     }
 
     @GetMapping("/")
@@ -65,11 +68,11 @@ public class UserController {
 //            return "fail " + ex.getMessage();
 //        }
 
-        if (userDaoImpl.connect(user) == 0) {
+        if (userDao.connect(user) == 0) {
             model.addAttribute("error", "wrongEnterData");
             return "redirect:/";
         } else {
-            user.setId(userDaoImpl.connect(user));
+            user.setId(userDao.connect(user));
             currentUser = user;
             return "redirect:/" + user.getName();
         }
@@ -83,15 +86,15 @@ public class UserController {
 
     @PostMapping("/register")
     public String registerSite(Model model, @ModelAttribute User user) throws SQLException {
-        if (userDaoImpl.nameAlreadyTaken(user)) {
+        if (userDao.nameAlreadyTaken(user)) {
             model.addAttribute("error", "usernameTaken");
             return "redirect:/";
         } else if (!user.getPasswordСheck().equals(user.getPassword())) {
             model.addAttribute("error", "passwordMismatch");
             return "redirect:/";
         } else {
-            userDaoImpl.insert(user);
-            user.setId(userDaoImpl.connect(user));
+            userDao.insert(user);
+            user.setId(userDao.connect(user));
             currentUser = user;
             return "redirect:/userpage";
         }
@@ -104,8 +107,8 @@ public class UserController {
         }
         model.addAttribute("user", currentUser);
         model.addAttribute("task", new Task());
-        model.addAttribute("datedTasksSet", taskDaoImpl.getInitialTasks(currentUser));
-        model.addAttribute("tasksSelector", "");
+        model.addAttribute("datedTasksSet", taskDao.getInitialTasks(currentUser));
+        model.addAttribute("tasksSelector", "initial");
         return "userpage";
     }
 
@@ -116,7 +119,7 @@ public class UserController {
         }
         model.addAttribute("user", currentUser);
         model.addAttribute("task", new Task());
-        model.addAttribute("datedTasksSet", taskDaoImpl.getTasksForToday(currentUser));
+        model.addAttribute("datedTasksSet", taskDao.getTasksForToday(currentUser));
         model.addAttribute("tasksSelector", "today");
         return "userpage";
     }
@@ -128,7 +131,7 @@ public class UserController {
         }
         model.addAttribute("user", currentUser);
         model.addAttribute("task", new Task());
-        model.addAttribute("datedTasksSet", taskDaoImpl.getTasksForTomorrow(currentUser));
+        model.addAttribute("datedTasksSet", taskDao.getTasksForTomorrow(currentUser));
         model.addAttribute("tasksSelector", "tomorrow");
         return "userpage";
     }
@@ -140,7 +143,7 @@ public class UserController {
         }
         model.addAttribute("user", currentUser);
         model.addAttribute("task", new Task());
-        model.addAttribute("datedTasksSet", taskDaoImpl.getTasksForWeek(currentUser));
+        model.addAttribute("datedTasksSet", taskDao.getTasksForWeek(currentUser));
         model.addAttribute("tasksSelector", "week");
         return "userpage";
     }
@@ -152,7 +155,7 @@ public class UserController {
         }
         model.addAttribute("user", currentUser);
         model.addAttribute("task", new Task());
-        model.addAttribute("datedTasksSet", taskDaoImpl.getUnfinishedTasks(currentUser));
+        model.addAttribute("datedTasksSet", taskDao.getUnfinishedTasks(currentUser));
         model.addAttribute("tasksSelector", "unfinished");
         return "userpage";
     }
@@ -164,7 +167,7 @@ public class UserController {
         }
         model.addAttribute("user", currentUser);
         model.addAttribute("task", new Task());
-        model.addAttribute("datedTasksSet", taskDaoImpl.getCompletedTasks(currentUser));
+        model.addAttribute("datedTasksSet", taskDao.getCompletedTasks(currentUser));
         model.addAttribute("tasksSelector", "completed");
         return "userpage";
     }
@@ -175,7 +178,7 @@ public class UserController {
             return "redirect:/";
         }
         task.setUser(currentUser.getId());
-        taskDaoImpl.insert(task);
+        taskDao.insert(task);
         return "redirect:/" + request.getHeader("Referer").substring(22);
     }
 
@@ -184,7 +187,7 @@ public class UserController {
         if (currentUser == null) {
             return "redirect:/";
         }
-        taskDaoImpl.delete(id);
+        taskDao.delete(id);
         return "redirect:/" + request.getHeader("Referer").substring(22);
     }
 
@@ -193,7 +196,7 @@ public class UserController {
         if (currentUser == null) {
             return "redirect:/";
         }
-        taskDaoImpl.complete(id);
+        taskDao.complete(id);
         return "redirect:/" + request.getHeader("Referer").substring(22);
     }
 }

@@ -8,14 +8,14 @@ public interface UserDao {
 
     void insert(User user) throws SQLException;
 
-    void updateName(User user) throws SQLException;
+    void changeName(User user) throws SQLException;
 
-    void updatePassword(User user) throws SQLException;
+    void changePassword(User user) throws SQLException;
 
     void delete(User user) throws SQLException;
 
     int connect(User user) throws SQLException;
 
-    Boolean nameAlreadyTaken(User user) throws SQLException;
+    boolean nameAlreadyTaken(User user) throws SQLException;
 
 }

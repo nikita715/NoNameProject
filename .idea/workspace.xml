@@ -2,38 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77c8c5f8-7326-4739-8d29-cabaf68ec9cb" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/ojdbc6.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/faebe49a-6300-4e9b-84c5-a75a4fd64325/_metadata_/metadata.keystream.len" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/faebe49a-6300-4e9b-84c5-a75a4fd64325/storage.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/faebe49a-6300-4e9b-84c5-a75a4fd64325/_metadata_/metadata.keystream" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/faebe49a-6300-4e9b-84c5-a75a4fd64325/_metadata_/metadata_i" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/faebe49a-6300-4e9b-84c5-a75a4fd64325/_metadata_/metadata_i.len" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/faebe49a-6300-4e9b-84c5-a75a4fd64325.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/faebe49a-6300-4e9b-84c5-a75a4fd64325/_src_/schema/S191976.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/faebe49a-6300-4e9b-84c5-a75a4fd64325/_metadata_/metadata.values.at" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/faebe49a-6300-4e9b-84c5-a75a4fd64325/_metadata_/metadata.len" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/faebe49a-6300-4e9b-84c5-a75a4fd64325/_metadata_/metadata_i" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/faebe49a-6300-4e9b-84c5-a75a4fd64325.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/faebe49a-6300-4e9b-84c5-a75a4fd64325/_src_/schema/S191976.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/ojdbc6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/faebe49a-6300-4e9b-84c5-a75a4fd64325/_metadata_/metadata.keystream.len" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/faebe49a-6300-4e9b-84c5-a75a4fd64325/_metadata_/metadata.values.at" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/faebe49a-6300-4e9b-84c5-a75a4fd64325/_metadata_/metadata" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/css/style.css" afterPath="$PROJECT_DIR$/target/classes/static/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/model/Task.java" afterPath="$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/model/Task.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/css/style.css" afterPath="$PROJECT_DIR$/src/main/resources/static/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/schema.sql" afterPath="$PROJECT_DIR$/target/classes/schema.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/model/DatedTasksGroup.java" afterPath="$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/model/DatedTasksGroup.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/faebe49a-6300-4e9b-84c5-a75a4fd64325/_metadata_/metadata_i.len" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/faebe49a-6300-4e9b-84c5-a75a4fd64325/storage.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/schema.sql" afterPath="$PROJECT_DIR$/src/main/resources/schema.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/ojdbc6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/ojdbc6.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/model/Priority.java" afterPath="$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/model/Priority.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/jdbc/TaskDao.java" afterPath="$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/jdbc/TaskDao.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/controller/TaskController.java" afterPath="$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/controller/TaskController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/model/Priority.java" afterPath="$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/model/Priority.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/ojdbc6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/ojdbc6.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/schema.sql" afterPath="$PROJECT_DIR$/src/main/resources/schema.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/model/Task.java" afterPath="$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/model/Task.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shelf.iml" afterPath="$PROJECT_DIR$/shelf.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/schema.sql" afterPath="$PROJECT_DIR$/target/classes/schema.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/model/DatedTasksGroup.java" afterPath="$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/model/DatedTasksGroup.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/css/style.css" afterPath="$PROJECT_DIR$/target/classes/static/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/css/style.css" afterPath="$PROJECT_DIR$/src/main/resources/static/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -78,154 +78,90 @@
         <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$GroupNode" />
       </PATH_ELEMENT>
     </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="@students.dce.ifmo.ru" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$GroupNode" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="TASKS" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="@students.dce.ifmo.ru" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$GroupNode" />
-      </PATH_ELEMENT>
-    </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TaskDaoImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/jdbc/impl/TaskDaoImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1254">
-              <caret line="77" column="63" lean-forward="false" selection-start-line="77" selection-start-column="63" selection-end-line="77" selection-end-column="63" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1483892394257" expanded="true" signature="1469:1715" ph="INSERT INTO TASKS... " />
-                <marker date="1483892394257" expanded="true" signature="1844:1902" ph="UPDATE TASKS... " />
-                <marker date="1483892394257" expanded="true" signature="2031:2081" ph="UPDATE TASKS... " />
-                <marker date="1483892394257" expanded="true" signature="2210:2260" ph="UPDATE TASKS... " />
-                <marker date="1483892394257" expanded="true" signature="2403:2467" ph="UPDATE TASKS... " />
-                <marker date="1483892394257" expanded="true" signature="2581:2623" ph="UPDATE TASKS... " />
-                <marker date="1483892394257" expanded="true" signature="2735:2764" ph="DELETE FROM " />
-                <marker date="1483892394257" expanded="true" signature="5554:5734" ph="SELECT * FRO... TASKS" />
-                <marker date="1483892394257" expanded="true" signature="6028:6208" ph="SELECT * FRO... TASKS" />
-                <marker date="1483892394257" expanded="true" signature="6517:6698" ph="SELECT * FRO... TASKS" />
-                <marker date="1483892394257" expanded="true" signature="7070:7302" ph="SELECT * FRO... TASKS" />
-                <marker date="1483892394257" expanded="true" signature="7070:7331" ph="SELECT * FRO... TASKS" />
-                <marker date="1483892394257" expanded="true" signature="7561:7669" ph="SELECT * FRO... TASKS" />
-                <marker date="1483892394257" expanded="true" signature="7962:8143" ph="SELECT * FRO... TASKS" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="application-context.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application-context.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+            <state relative-caret-position="208">
+              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding>
-                <marker date="1483893792397" expanded="true" signature="1384:1433" ph="SELECT NAME,... USERS" />
+                <marker date="1483998961999" expanded="false" signature="912:950" ph="oracle.jdbc.OracleDriver" />
+                <marker date="1483998961999" expanded="false" signature="1049:1073" ph="jdbc:oracle:thin:@students.dce.ifmo.ru:1521:XE" />
+                <marker date="1483998961999" expanded="false" signature="1173:1202" ph="s191976" />
+                <marker date="1483998961999" expanded="false" signature="1306:1335" ph="cjj221" />
+                <marker date="1483998961999" expanded="true" signature="2159:2206" ph="SELECT NAME,... USERS" />
+                <marker date="1483998961999" expanded="true" signature="2317:2377" ph="SELECT NAME,... USERS" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="106">
+              <caret line="15" column="116" lean-forward="false" selection-start-line="15" selection-start-column="116" selection-end-line="15" selection-end-column="116" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="81" column="5" lean-forward="true" selection-start-line="81" selection-start-column="5" selection-end-line="81" selection-end-column="5" />
+            <state relative-caret-position="-136">
+              <caret line="34" column="31" lean-forward="false" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WebSecurityConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/security/WebSecurityConfig.java">
+      <file leaf-file-name="AppConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/AppConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="userpage.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/userpage.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="61" column="85" lean-forward="false" selection-start-line="61" selection-start-column="85" selection-end-line="61" selection-end-column="85" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="js.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/js.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="69" lean-forward="true" selection-start-line="24" selection-start-column="69" selection-end-line="24" selection-end-column="69" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserDaoImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/jdbc/impl/UserDaoImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-336">
-              <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+            <state relative-caret-position="242">
+              <caret line="20" column="39" lean-forward="true" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1483892394210" expanded="true" signature="927:1025" ph="INSERT INTO USERS... " />
-                <marker date="1483892394210" expanded="true" signature="1139:1199" ph="UPDATE USERS... " />
-                <marker date="1483892394210" expanded="true" signature="1332:1401" ph="UPDATE USERS... " />
-                <marker date="1483892394210" expanded="true" signature="1526:1555" ph="DELETE FROM " />
-                <marker date="1483892394210" expanded="true" signature="1713:1765" ph="SELECT ID FR... USERS" />
-                <marker date="1483892394210" expanded="true" signature="2037:2078" ph="SELECT ID FR... USERS" />
-                <marker date="1483892394210" expanded="true" signature="2037:2102" ph="SELECT COUNT... USERS" />
+                <element signature="e#633#634#0" expanded="true" />
+                <element signature="e#679#680#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TaskDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/jdbc/TaskDao.java">
+      <file leaf-file-name="WebSecurityConfig.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/security/WebSecurityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="29" column="17" lean-forward="false" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+            <state relative-caret-position="425">
+              <caret line="40" column="22" lean-forward="true" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#809#810#0" expanded="true" />
+                <element signature="e#853#854#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/811981f3-b002-4fbb-b787-fee0a67da117/console.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="5" lean-forward="false" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/jdbc/UserDao.java">
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="34">
+              <caret line="2" column="33" lean-forward="false" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -237,6 +173,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="spring-beans.schema" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -247,6 +184,10 @@
       <find>package ru.ifmo.shelf.jdbc.impl;  import org.springframework.beans.factory.annotation.Autowired; import org.springframework.jdbc.core.JdbcTemplate; import org.springframework.jdbc.support.rowset.SqlRowSet; import org.springframework.stereotype.Repository; import ru.ifmo.shelf.jdbc.ITaskDao; import ru.ifmo.shelf.model.DatedTasksGroup; import ru.ifmo.shelf.model.Task; import ru.ifmo.shelf.model.User;  import javax.sql.DataSource; import java.sql.*; import java.text.ParseException; import java.text.SimpleDateFormat; import java.util.*; import java.util.Date;  /**  * Created by nikge on 18.12.2016.  */ @Repository public class TaskDao implements ITaskDao {      private static SimpleDateFormat dateFormatDB;     private static SimpleDateFormat dateFormatTasksGroup;     private static SimpleDateFormat dateFormatTask;      private JdbcTemplate jdbcTemplate;     private DataSource dataSource;      @Autowired     public TaskDao(DataSource dataSource) {         this.dataSource = dataSource;         this.jdbcTemplate = new JdbcTemplate(dataSource);     }      static {         Locale.setDefault(Locale.US);         dateFormatDB = new SimpleDateFormat(&quot;yyyy-MM-DD&quot;);         dateFormatTasksGroup = new SimpleDateFormat(&quot;MMMM, D&quot;);         dateFormatTask = new SimpleDateFormat(&quot;D MMM&quot;);     }      @Override     public void insert(Task task) throws SQLException {         String sql = &quot;INSERT INTO TASKS (USER_ID, NAME, DESCRIPTION, PRIORITY, TIME) VALUES (&quot; + task.getUser() + &quot;, '&quot; + task.getName() + &quot;', '&quot; + task.getDescription() + &quot;', '&quot; + task.getPriority() + &quot;', TO_DATE('&quot; + task.getTime() + &quot;', 'yyyy-MM-DD'))&quot;;         jdbcTemplate.update(sql); //        Statement statement = connection.createStatement(); //        statement.execute(&quot;INSERT INTO TASKS (USER_ID, NAME, DESCRIPTION, PRIORITY, TIME) VALUES (&quot; + task.getUser() + &quot;, '&quot; + task.getName() + &quot;', '&quot; + task.getDescription() + &quot;', '&quot; + task.getPriority() + &quot;', TO_DATE('&quot; + task.getTime() + &quot;', 'yyyy-MM-DD'))&quot;);     }      @Override     public void updatePriority(int id, int priority) throws SQLException {         String sql = &quot;UPDATE TASKS SET PRIORITY = '&quot; + priority + &quot;' WHERE ID = &quot; + id;         jdbcTemplate.update(sql); //        Statement statement = connection.createStatement(); //        statement.execute(&quot;UPDATE TASKS SET PRIORITY = '&quot; + priority + &quot;' WHERE ID = &quot; + id);     }      @Override     public void updateName(int id, String name) throws SQLException {         String sql = &quot;UPDATE TASKS SET NAME = '&quot; + name + &quot;' WHERE ID = &quot; + id);         jdbcTemplate.update(sql); //        Statement statement = connection.createStatement(); //        statement.execute(&quot;UPDATE TASKS SET NAME = '&quot; + name + &quot;' WHERE ID = &quot; + id);     }      @Override     public void updateTime(int id, String time) throws SQLException {         String sql = &quot;UPDATE TASKS SET TIME = '&quot; + time + &quot;' WHERE ID = &quot; + id;         jdbcTemplate.update(sql); //        Statement statement = connection.createStatement(); //        statement.execute(&quot;UPDATE TASKS SET TIME = '&quot; + time + &quot;' WHERE ID = &quot; + id);     }      @Override     public void updateDescription(int id, String description) throws SQLException {         String sql = &quot;UPDATE TASKS SET DESCRIPTION = '&quot; + description + &quot;' WHERE ID = &quot; + id);         jdbcTemplate.update(sql); //        Statement statement = connection.createStatement(); //        statement.execute(&quot;UPDATE TASKS SET DESCRIPTION = '&quot; + description + &quot;' WHERE ID = &quot; + id);     }      @Override     public void complete(int id) throws SQLException {         String sql = &quot;UPDATE TASKS SET COMPLETED = 1 WHERE ID = &quot; + id;         jdbcTemplate.update(sql); //        Statement statement = connection.createStatement(); //        statement.execute(&quot;UPDATE TASKS SET COMPLETED = 1 WHERE ID = &quot; + id);     }      @Override     public void delete(int id) throws SQLException {         String sql = &quot;DELETE FROM TASKS WHERE ID = &quot; + id;         jdbcTemplate.update(sql); //        Statement statement = connection.createStatement(); //        statement.execute(&quot;DELETE FROM TASKS WHERE ID = &quot; + id);     }      private LinkedHashSet&lt;DatedTasksGroup&gt; resultSetToDatedTasksSet(SqlRowSet resultSet) throws SQLException, ParseException {         LinkedHashSet&lt;DatedTasksGroup&gt; datedSet = new LinkedHashSet&lt;DatedTasksGroup&gt;();          LinkedHashSet&lt;Task&gt; currentDateSet = new LinkedHashSet&lt;Task&gt;();         Date currentDate = new Date(0);         while (resultSet.next()) {             int id = resultSet.getInt(&quot;ID&quot;);             int userId = resultSet.getInt(&quot;USER_ID&quot;);             int priority = resultSet.getInt(&quot;PRIORITY&quot;);             String name = resultSet.getString(&quot;NAME&quot;);             String description = resultSet.getString(&quot;DESCRIPTION&quot;);             Date date = dateFormatDB.parse(resultSet.getString(&quot;TIME&quot;));             String taskDate = dateFormatTask.format(date);             Task task = new Task(id, userId, name, taskDate, priority, description);              if (currentDate.equals(new Date(0))) {                 currentDate = date;             }              if (!date.equals(currentDate)) {                 DatedTasksGroup tasksGroup = new DatedTasksGroup();                 tasksGroup.setTime(dateFormatTasksGroup.format(currentDate));                 tasksGroup.setTasks(currentDateSet);                 tasksGroup.setOverdue(isOverdue(currentDate));                 datedSet.add(tasksGroup);                 currentDate = date;                 currentDateSet = new LinkedHashSet&lt;Task&gt;();             }             currentDateSet.add(task);         }          if (currentDateSet.size() &gt; 0) {             DatedTasksGroup tasksGroup = new DatedTasksGroup();             tasksGroup.setTime(dateFormatTasksGroup.format(currentDate));             tasksGroup.setTasks(currentDateSet);             tasksGroup.setOverdue(isOverdue(currentDate));             datedSet.add(tasksGroup);         }          return datedSet;     }      private Boolean isOverdue(Date date) {         return date.before(new Date(System.currentTimeMillis() - 86400000));     }      @Override     public LinkedHashSet&lt;DatedTasksGroup&gt; getUnfinishedTasks(User user) throws SQLException, ParseException {         Date currentDate = new Date(System.currentTimeMillis());         String sql = &quot;SELECT * FROM TASKS WHERE USER_ID = &quot; + user.getId() + &quot; AND COMPLETED = 0 AND TIME &lt; TO_DATE('&quot; + dateFormatDB.format(currentDate) + &quot;', 'YYYY-MM-DD') ORDER BY TIME, PRIORITY DESC&quot;;         return resultSetToDatedTasksSet(jdbcTemplate.queryForRowSet(sql)); //        Statement statement = connection.createStatement(); //        Date currentDate = new Date(System.currentTimeMillis()); //        ResultSet resultSet = statement.executeQuery(&quot;SELECT * FROM TASKS WHERE USER_ID = &quot; + user.getId() + &quot; AND COMPLETED = 0 AND TIME &lt; TO_DATE('&quot; + dateFormatDB.format(currentDate) + &quot;', 'YYYY-MM-DD') ORDER BY TIME, PRIORITY DESC&quot;); //        return resultSetToDatedTasksSet(resultSet);     }      @Override     public LinkedHashSet&lt;DatedTasksGroup&gt; getTasksForToday(User user) throws SQLException, ParseException {         Date currentDate = new Date(System.currentTimeMillis());         String sql = &quot;SELECT * FROM TASKS WHERE USER_ID = &quot; + user.getId() + &quot; AND COMPLETED = 0 AND TIME = TO_DATE('&quot; + dateFormatDB.format(currentDate) + &quot;', 'YYYY-MM-DD') ORDER BY TIME, PRIORITY DESC&quot;;         return resultSetToDatedTasksSet(jdbcTemplate.queryForRowSet(sql)); //        Statement statement = connection.createStatement(); //        Date currentDate = new Date(System.currentTimeMillis()); //        ResultSet resultSet = statement.executeQuery(&quot;SELECT * FROM TASKS WHERE USER_ID = &quot; + user.getId() + &quot; AND COMPLETED = 0 AND TIME = TO_DATE('&quot; + dateFormatDB.format(currentDate) + &quot;', 'YYYY-MM-DD') ORDER BY TIME, PRIORITY DESC&quot;); //        return resultSetToDatedTasksSet(resultSet);     }      @Override     public LinkedHashSet&lt;DatedTasksGroup&gt; getTasksForTomorrow(User user) throws SQLException, ParseException {         Date tomorrowDate = new Date(System.currentTimeMillis() + 86400000);         String sql = &quot;SELECT * FROM TASKS WHERE USER_ID = &quot; + user.getId() + &quot; AND COMPLETED = 0 AND TIME = TO_DATE('&quot; + dateFormatDB.format(tomorrowDate) + &quot;', 'YYYY-MM-DD') ORDER BY TIME, PRIORITY DESC&quot;;         return resultSetToDatedTasksSet(jdbcTemplate.queryForRowSet(sql)); //        Statement statement = connection.createStatement(); //        Date tomorrowDate = new Date(System.currentTimeMillis() + 86400000); //        ResultSet resultSet = statement.executeQuery(&quot;SELECT * FROM TASKS WHERE USER_ID = &quot; + user.getId() + &quot; AND COMPLETED = 0 AND TIME = TO_DATE('&quot; + dateFormatDB.format(tomorrowDate) + &quot;', 'YYYY-MM-DD') ORDER BY TIME, PRIORITY DESC&quot;); //        return resultSetToDatedTasksSet(resultSet);     }      @Override     public LinkedHashSet&lt;DatedTasksGroup&gt; getTasksForWeek(User user) throws SQLException, ParseException {         Date currentDate = new Date(System.currentTimeMillis());         Date dateAfterWeek = new Date(System.currentTimeMillis() + 518400000);         String sql = &quot;SELECT * FROM TASKS WHERE USER_ID = &quot; + user.getId() + &quot; AND COMPLETED = 0 AND TIME &lt;= TO_DATE('&quot; + dateFormatDB.format(currentDate) + &quot;', 'YYYY-MM-DD')&quot;;         return resultSetToDatedTasksSet(jdbcTemplate.queryForRowSet(sql)); //        Statement statement = connection.createStatement(); //        Date currentDate = new Date(System.currentTimeMillis()); //        Date dateAfterWeek = new Date(System.currentTimeMillis() + 518400000); //        ResultSet resultSet = statement.executeQuery(&quot;SELECT * FROM TASKS WHERE USER_ID = &quot; + user.getId() + &quot; AND COMPLETED = 0 AND TIME &lt;= TO_DATE('&quot; + dateFormatDB.format(currentDate) + &quot;', 'YYYY-MM-DD')&quot;); //        return resultSetToDatedTasksSet(resultSet);     }      @Override     public LinkedHashSet&lt;DatedTasksGroup&gt; getCompletedTasks(User user) throws SQLException, ParseException {         String sql = &quot;SELECT * FROM TASKS WHERE USER_ID = &quot; + user.getId() + &quot; AND COMPLETED = 1 ORDER BY TIME DESC, PRIORITY DESC&quot;;         return resultSetToDatedTasksSet(jdbcTemplate.queryForRowSet(sql)); //        Statement statement = connection.createStatement(); //        ResultSet resultSet = statement.executeQuery(&quot;SELECT * FROM TASKS WHERE USER_ID = &quot; + user.getId() + &quot; AND COMPLETED = 1 ORDER BY TIME DESC, PRIORITY DESC&quot;); //        return resultSetToDatedTasksSet(resultSet);     }      @Override     public LinkedHashSet&lt;DatedTasksGroup&gt; getInitialTasks(User user) throws SQLException, ParseException {         Date currentDate = new Date(System.currentTimeMillis());         String sql = &quot;SELECT * FROM TASKS WHERE USER_ID = &quot; + user.getId() + &quot; AND COMPLETED = 0 AND TIME &lt; TO_DATE('&quot; + dateFormatDB.format(currentDate) + &quot;', 'YYYY-MM-DD') ORDER BY TIME, PRIORITY DESC&quot;;         return resultSetToDatedTasksSet(jdbcTemplate.queryForRowSet(sql)); //        Statement statement = connection.createStatement(); //        Date currentDate = new Date(System.currentTimeMillis()); //        ResultSet resultSet = statement.executeQuery(&quot;SELECT * FROM TASKS WHERE USER_ID = &quot; + user.getId() + &quot; AND COMPLETED = 0 AND TIME &lt; TO_DATE('&quot; + dateFormatDB.format(currentDate) + &quot;', 'YYYY-MM-DD') ORDER BY TIME, PRIORITY DESC&quot;); //        return resultSetToDatedTasksSet(resultSet);     } }</find>
       <find>before</find>
       <find>@</find>
+      <find>time</find>
+      <find>default</find>
+      <find>core</find>
+      <find>authoritiesByUsernameQuery</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -260,11 +201,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/811981f3-b002-4fbb-b787-fee0a67da117/console.sql" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
         <option value="$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/jdbc/UserDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/jdbc/TaskDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/jdbc/UserDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/jdbc/IUserDao.java" />
         <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
         <option value="$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/jdbc/ITaskDao.java" />
@@ -273,22 +210,32 @@
         <option value="$PROJECT_DIR$/src/main/resources/datasource.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/Beans.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/model/Task.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/css/style.css" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/Application.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/controller/MainController.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/jdbc/impl/TaskDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/jdbc/impl/UserDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/jdbc/impl/UserDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/jdbc/impl/TaskDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/model/DatedTasksGroup.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application-context.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/security/WebSecurityConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/userpage.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/js.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/css/style.css" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/jdbc/TaskDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/jdbc/UserDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/model/Priority.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/jdbc/CategoryDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/model/Category.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/schema.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/jdbc/impl/CategoryDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/jdbc/impl/UserDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/model/Task.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/jdbc/impl/TaskDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/userpage.html" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/Application.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/811981f3-b002-4fbb-b787-fee0a67da117/console.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/AppConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application-context.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/security/WebSecurityConfig.java" />
       </list>
     </option>
   </component>
@@ -327,6 +274,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -663,56 +613,19 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="jdbc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="impl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Shelf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Shelf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shelf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="database.main" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Spring-Security-HTTP-Basic-Authentication-Example/Spring3MVC" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/gs-securing-web-master (1)/gs-securing-web-master/complete" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -732,27 +645,15 @@
       <recent name="C:\Users\nikge\OneDrive\Shelf\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.Application (1)">
-    <configuration default="false" name="Application (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Application">
+    <configuration default="false" name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="ru.ifmo.shelf.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.ifmo.shelf.Application" />
-      <module name="shelf" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="UserDaoImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="ru.ifmo.shelf.jdbc.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="ru.ifmo.shelf.jdbc.impl.UserDaoImpl" />
+      <option name="MAIN_CLASS_NAME" value="ru.ifmo.shelf.Application" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1145,22 +1046,12 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <configuration default="false" name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.ifmo.shelf.Application" />
-      <module name="Shelf" />
-      <envs />
-      <method />
-    </configuration>
-    <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="Spring Boot.Application" />
-      <item index="1" class="java.lang.String" itemvalue="Spring Boot.Application (1)" />
-      <item index="2" class="java.lang.String" itemvalue="Application.UserDaoImpl" />
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Application.Application" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Spring Boot.Application (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Application.UserDaoImpl" />
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Application.Application" />
       </list>
     </recent_temporary>
   </component>
@@ -1182,12 +1073,13 @@
       <workItem from="1483795192149" duration="19091000" />
       <workItem from="1483820384735" duration="18090000" />
       <workItem from="1483875202040" duration="3674000" />
-      <workItem from="1483881166135" duration="14035000" />
+      <workItem from="1483881166135" duration="14367000" />
+      <workItem from="1483905187809" duration="31594000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56583000" />
+    <option name="totallyTimeSpent" value="88509000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1195,29 +1087,28 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5042644" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15938166" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18923241" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997833" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936078" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18923241" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936078" sideWeight="0.49573562" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1913646" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1225,6 +1116,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1235,7 +1127,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="17" />
+      <option name="time" value="21" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1244,7 +1136,7 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/target/classes/application-context.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1252,62 +1144,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shelf.iml">
+    <entry file="file://$PROJECT_DIR$/target/classes/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/jdbc/impl/TaskDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1483892394257" expanded="true" signature="1469:1715" ph="INSERT INTO TASKS... " />
-            <marker date="1483892394257" expanded="true" signature="1844:1902" ph="UPDATE TASKS... " />
-            <marker date="1483892394257" expanded="true" signature="2031:2081" ph="UPDATE TASKS... " />
-            <marker date="1483892394257" expanded="true" signature="2210:2260" ph="UPDATE TASKS... " />
-            <marker date="1483892394257" expanded="true" signature="2403:2467" ph="UPDATE TASKS... " />
-            <marker date="1483892394257" expanded="true" signature="2581:2623" ph="UPDATE TASKS... " />
-            <marker date="1483892394257" expanded="true" signature="2735:2764" ph="DELETE FROM " />
-            <marker date="1483892394257" expanded="true" signature="5554:5734" ph="SELECT * FRO... TASKS" />
-            <marker date="1483892394257" expanded="true" signature="6028:6208" ph="SELECT * FRO... TASKS" />
-            <marker date="1483892394257" expanded="true" signature="6517:6698" ph="SELECT * FRO... TASKS" />
-            <marker date="1483892394257" expanded="true" signature="7070:7302" ph="SELECT * FRO... TASKS" />
-            <marker date="1483892394257" expanded="true" signature="7070:7331" ph="SELECT * FRO... TASKS" />
-            <marker date="1483892394257" expanded="true" signature="7561:7669" ph="SELECT * FRO... TASKS" />
-            <marker date="1483892394257" expanded="true" signature="7962:8143" ph="SELECT * FRO... TASKS" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/main/java/ru/ifmo/shelf/jdbc/TaskDao.java" />
-    <entry file="file://$PROJECT_DIR$/shelf.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1319,154 +1160,301 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/schema.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="2" lean-forward="false" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/additional-spring-configuration-metadata.json" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/1.4.3.RELEASE/spring-boot-autoconfigure-1.4.3.RELEASE.jar!/org/springframework/boot/autoconfigure/batch/BatchDatabaseInitializer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="23" column="23" lean-forward="false" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/Beans.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/1.4.3.RELEASE/spring-boot-autoconfigure-1.4.3.RELEASE.jar!/org/springframework/boot/autoconfigure/EnableAutoConfiguration.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="23" column="18" lean-forward="false" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/security/cert/CertificateEncodingException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="33" column="13" lean-forward="false" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/lang/Exception.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="44" column="13" lean-forward="false" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.3.4.RELEASE/spring-core-4.3.4.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/4.3.5.RELEASE/spring-tx-4.3.5.RELEASE.jar!/org/springframework/dao/support/PersistenceExceptionTranslationInterceptor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.5.RELEASE/spring-aop-4.3.5.RELEASE.jar!/org/springframework/aop/framework/ReflectiveMethodInvocation.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.5.RELEASE/spring-aop-4.3.5.RELEASE.jar!/org/springframework/aop/framework/CglibAopProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="504" column="0" lean-forward="false" selection-start-line="504" selection-start-column="0" selection-end-line="504" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.3.4.RELEASE/spring-core-4.3.4.RELEASE.jar!/org/springframework/util/Assert.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.4.RELEASE/spring-context-4.3.4.RELEASE.jar!/org/springframework/ui/ModelMap.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.4.RELEASE/spring-context-4.3.4.RELEASE.jar!/org/springframework/ui/ExtendedModelMap.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/4.3.4.RELEASE/spring-jdbc-4.3.4.RELEASE.jar!/org/springframework/jdbc/core/JdbcTemplate.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3757">
-          <caret line="316" column="0" lean-forward="false" selection-start-line="316" selection-start-column="0" selection-end-line="316" selection-end-column="0" />
+    <entry file="dbDummy://dbtable:/ecdf19d9/811981f3-b002-4fbb-b787-fee0a67da117/S191976.PRIORITIES">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/ecdf19d9/811981f3-b002-4fbb-b787-fee0a67da117/S191976.CATEGORIES">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/ecdf19d9/811981f3-b002-4fbb-b787-fee0a67da117/S191976.STAFF">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/ecdf19d9/811981f3-b002-4fbb-b787-fee0a67da117/S191976.ROUTES">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/ecdf19d9/811981f3-b002-4fbb-b787-fee0a67da117/S191976.ORDERS">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/ecdf19d9/811981f3-b002-4fbb-b787-fee0a67da117/S191976.PERSONS">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/jdbc/impl/CategoryDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="51" lean-forward="false" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#665#666#0" expanded="true" />
+            <marker date="1483931689968" expanded="true" signature="755:831" ph="INSERT INTO CATEGORIES... " />
+            <marker date="1483931689968" expanded="true" signature="755:860" ph="INSERT INTO CATEGORIES... " />
+            <marker date="1483931689968" expanded="true" signature="962:1031" ph="UPDATE CATEG... " />
+            <marker date="1483931689968" expanded="true" signature="1148:1182" ph="DELETE FROM " />
+            <marker date="1483931689968" expanded="true" signature="1754:1795" ph="SELECT * FRO... CATEGORIES" />
+            <marker date="1483931689968" expanded="true" signature="1754:1811" ph="SELECT * FRO... CATEGORIES" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/jdbc/impl/UserDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-200">
+          <caret line="20" column="47" lean-forward="false" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
+          <folding>
+            <element signature="e#595#596#0" expanded="true" />
+            <marker date="1483931689968" expanded="true" signature="697:795" ph="INSERT INTO USERS... " />
+            <marker date="1483931689968" expanded="true" signature="909:969" ph="UPDATE USERS... " />
+            <marker date="1483931689968" expanded="true" signature="1102:1171" ph="UPDATE USERS... " />
+            <marker date="1483931689968" expanded="true" signature="1296:1325" ph="DELETE FROM " />
+            <marker date="1483931689968" expanded="true" signature="1483:1535" ph="SELECT ID FR... USERS" />
+            <marker date="1483931689968" expanded="true" signature="1807:1848" ph="SELECT ID FR... USERS" />
+            <marker date="1483931689968" expanded="true" signature="1807:1872" ph="SELECT COUNT... USERS" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/model/Task.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="47" column="5" lean-forward="false" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+        <state relative-caret-position="236">
+          <caret line="34" column="26" lean-forward="false" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/ecdf19d9/811981f3-b002-4fbb-b787-fee0a67da117/S191976.TASKS">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/jdbc/impl/TaskDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-492">
+          <caret line="82" column="72" lean-forward="false" selection-start-line="82" selection-start-column="72" selection-end-line="82" selection-end-column="72" />
           <folding>
-            <element signature="e#1010#1011#0" expanded="false" />
-            <element signature="e#1038#1039#0" expanded="false" />
-            <element signature="e#1066#1067#0" expanded="false" />
-            <element signature="e#1093#1094#0" expanded="false" />
-            <element signature="e#1130#1131#0" expanded="false" />
-            <element signature="e#1162#1163#0" expanded="false" />
-            <element signature="e#1193#1194#0" expanded="false" />
-            <element signature="e#1220#1221#0" expanded="false" />
-            <element signature="e#1260#1261#0" expanded="false" />
-            <element signature="e#1292#1293#0" expanded="false" />
-            <element signature="e#1323#1324#0" expanded="false" />
-            <element signature="e#1350#1351#0" expanded="false" />
-            <element signature="e#1390#1391#0" expanded="false" />
-            <element signature="e#1422#1423#0" expanded="false" />
-            <element signature="e#1454#1455#0" expanded="false" />
-            <element signature="e#1485#1486#0" expanded="false" />
-            <element signature="e#1530#1531#0" expanded="false" />
-            <element signature="e#1570#1571#0" expanded="false" />
-            <element signature="e#1608#1609#0" expanded="false" />
-            <element signature="e#1642#1643#0" expanded="false" />
-            <element signature="e#1696#1697#0" expanded="false" />
-            <element signature="e#1742#1743#0" expanded="false" />
-            <element signature="e#1779#1780#0" expanded="false" />
-            <element signature="e#1811#1812#0" expanded="false" />
-            <element signature="e#1862#1863#0" expanded="false" />
-            <element signature="e#1904#1905#0" expanded="false" />
+            <element signature="e#1058#1059#0" expanded="true" />
+            <element signature="e#1117#1118#0" expanded="true" />
+            <marker date="1483932906453" expanded="true" signature="1219:1472" ph="INSERT INTO TASKS... " />
+            <marker date="1483932906453" expanded="true" signature="1601:1659" ph="UPDATE TASKS... " />
+            <marker date="1483932906453" expanded="true" signature="1788:1838" ph="UPDATE TASKS... " />
+            <marker date="1483932906453" expanded="true" signature="1967:2021" ph="UPDATE TASKS... " />
+            <marker date="1483932906453" expanded="true" signature="2164:2228" ph="UPDATE TASKS... " />
+            <marker date="1483932906453" expanded="true" signature="2342:2384" ph="UPDATE TASKS... " />
+            <marker date="1483932906453" expanded="true" signature="2496:2525" ph="DELETE FROM " />
+            <marker date="1483932906453" expanded="true" signature="5319:5507" ph="SELECT * FRO... TASKS" />
+            <marker date="1483932906453" expanded="true" signature="5801:5989" ph="SELECT * FRO... TASKS" />
+            <marker date="1483932906453" expanded="true" signature="6298:6487" ph="SELECT * FRO... TASKS" />
+            <marker date="1483932906453" expanded="true" signature="6859:7099" ph="SELECT * FRO... TASKS" />
+            <marker date="1483932906453" expanded="true" signature="6859:7132" ph="SELECT * FRO... TASKS" />
+            <marker date="1483932906453" expanded="true" signature="7362:7474" ph="SELECT * FRO... TASKS" />
+            <marker date="1483932906453" expanded="true" signature="7767:7956" ph="SELECT * FRO... TASKS" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.4.RELEASE/spring-beans-4.3.4.RELEASE.jar!/org/springframework/beans/factory/annotation/Autowired.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/4.1.4.RELEASE/spring-security-config-4.1.4.RELEASE.jar!/org/springframework/security/config/annotation/web/WebSecurityConfigurer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/4.1.4.RELEASE/spring-security-config-4.1.4.RELEASE.jar!/org/springframework/security/config/annotation/web/configuration/WebSecurityConfigurerAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="64" column="34" lean-forward="false" selection-start-line="64" selection-start-column="27" selection-end-line="64" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/1.4.3.RELEASE/spring-boot-1.4.3.RELEASE.jar!/org/springframework/boot/SpringApplication.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="181" column="0" lean-forward="false" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-expression/4.3.5.RELEASE/spring-expression-4.3.5.RELEASE.jar!/org/springframework/expression/spel/support/StandardTypeConverter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="e#866#867#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/4.1.4.RELEASE/spring-security-config-4.1.4.RELEASE.jar!/org/springframework/security/config/annotation/authentication/configuration/AuthenticationConfiguration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="47" column="40" lean-forward="false" selection-start-line="47" selection-start-column="40" selection-end-line="47" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-parent/1.4.3.RELEASE/spring-boot-starter-parent-1.4.3.RELEASE.pom">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="28" column="12" lean-forward="false" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-dependencies/1.4.3.RELEASE/spring-boot-dependencies-1.4.3.RELEASE.pom">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="2100" column="39" lean-forward="false" selection-start-line="2100" selection-start-column="35" selection-end-line="2100" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/4.2.0.RELEASE/spring-security-config-4.2.0.RELEASE.jar!/org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/4.2.0.RELEASE/spring-security-config-4.2.0.RELEASE.jar!/org/springframework/security/config/annotation/web/configuration/WebSecurityConfigurerAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="157" column="19" lean-forward="false" selection-start-line="157" selection-start-column="19" selection-end-line="157" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/userpage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#5114#5121#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="595" column="1" lean-forward="false" selection-start-line="595" selection-start-column="1" selection-end-line="595" selection-end-column="1" />
+        <state relative-caret-position="242">
+          <caret line="610" column="14" lean-forward="false" selection-start-line="610" selection-start-column="14" selection-end-line="610" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/ecdf19d9/811981f3-b002-4fbb-b787-fee0a67da117/S191976.TASKS">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/4.1.3.RELEASE/spring-security-core-4.1.3.RELEASE.jar!/org/springframework/security/authentication/InternalAuthenticationServiceException.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+          <folding>
+            <element signature="e#420#421#0" expanded="true" />
+            <element signature="e#457#458#0" expanded="true" />
+          </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/4.1.3.RELEASE/spring-security-core-4.1.3.RELEASE.jar!/org/springframework/security/authentication/dao/DaoAuthenticationProvider.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="65" column="61" lean-forward="false" selection-start-line="65" selection-start-column="61" selection-end-line="65" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="531">
+          <caret line="32" column="55" lean-forward="false" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/ecdf19d9/811981f3-b002-4fbb-b787-fee0a67da117/S191976.USERS">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1480,12 +1468,15 @@
             <node x="" y="">fileset=shelf/Spring Application Context</node>
             <node x="" y="">filePath=C:/Users/nikge/OneDrive/Shelf/src/main/resources/application-context.xml</node>
             <node x="" y="">ru.ifmo.shelf.Application</node>
+            <node x="" y="">ru.ifmo.shelf.security.WebSecurityConfig</node>
+            <node x="" y="">org.springframework.security.config.annotation.web.configuration.EnableWebSecurity</node>
+            <node x="" y="">ru.ifmo.shelf.AppConfig</node>
             <node x="" y="">org.springframework.boot.autoconfigure.EnableAutoConfiguration</node>
             <node x="" y="">org.springframework.boot.autoconfigure.SpringBootApplication</node>
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="381.5" y="55.0" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="484.0" y="100.0" />
           <SelectedNodes />
           <Categories>
             <Category>Show filesets as groups</Category>
@@ -1495,225 +1486,213 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="221">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/controller/TaskController.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/4.1.3.RELEASE/spring-security-config-4.1.3.RELEASE.jar!/org/springframework/security/config/annotation/authentication/configurers/userdetails/AbstractDaoAuthenticationConfigurer.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="153">
+          <caret line="16" column="27" lean-forward="false" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+          <folding>
+            <element signature="e#2019#2020#0" expanded="true" />
+            <element signature="e#2065#2066#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/4.1.3.RELEASE/spring-security-core-4.1.3.RELEASE.jar!/org/springframework/security/authentication/AuthenticationManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/4.1.3.RELEASE/spring-security-config-4.1.3.RELEASE.jar!/org/springframework/security/config/annotation/web/configuration/WebSecurityConfigurerAdapter.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="173" lean-forward="false" selection-start-line="23" selection-start-column="173" selection-end-line="23" selection-end-column="173" />
+        <state relative-caret-position="264">
+          <caret line="82" column="50" lean-forward="false" selection-start-line="82" selection-start-column="50" selection-end-line="82" selection-end-column="50" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/ecdf19d9/811981f3-b002-4fbb-b787-fee0a67da117/S191976.USERS">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/4.1.3.RELEASE/spring-security-config-4.1.3.RELEASE.jar!/org/springframework/security/config/annotation/authentication/configuration/AuthenticationConfiguration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="47" column="33" lean-forward="true" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/4.1.3.RELEASE/spring-security-config-4.1.3.RELEASE.jar!/org/springframework/security/config/annotation/authentication/builders/AuthenticationManagerBuilder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/4.1.3.RELEASE/spring-security-config-4.1.3.RELEASE.jar!/org/springframework/security/config/annotation/authentication/configurers/provisioning/JdbcUserDetailsManagerConfigurer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <element signature="e#1437#1438#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/4.1.3.RELEASE/spring-security-core-4.1.3.RELEASE.jar!/org/springframework/security/core/userdetails/jdbc/JdbcDaoImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="37" column="33" lean-forward="true" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
+          <folding>
+            <marker date="1481456289696" expanded="true" signature="1852:1913" ph="select usern... authorities" />
+            <marker date="1481456289696" expanded="true" signature="1970:2131" ph="select g.id,... groups" />
+            <marker date="1481456289696" expanded="true" signature="2177:2239" ph="select usern... users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/4.1.3.RELEASE/spring-security-core-4.1.3.RELEASE.jar!/org/springframework/security/provisioning/JdbcUserDetailsManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-44">
+          <caret line="64" column="33" lean-forward="false" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
+          <folding>
+            <marker date="1481456289696" expanded="true" signature="4290:4352" ph="insert into users... " />
+            <marker date="1481456289696" expanded="true" signature="4391:4427" ph="delete from " />
+            <marker date="1481456289696" expanded="true" signature="4466:4527" ph="update users... " />
+            <marker date="1481456289696" expanded="true" signature="4571:4629" ph="insert into authorities... " />
+            <marker date="1481456289696" expanded="true" signature="4679:4721" ph="delete from " />
+            <marker date="1481456289696" expanded="true" signature="4760:4805" ph="select usern... users" />
+            <marker date="1481456289696" expanded="true" signature="4848:4896" ph="update users... " />
+            <marker date="1481456289696" expanded="true" signature="4938:4967" ph="select group... groups" />
+            <marker date="1481456289696" expanded="true" signature="5012:5105" ph="select usern... group_members" />
+            <marker date="1481456289696" expanded="true" signature="5145:5187" ph="insert into groups... " />
+            <marker date="1481456289696" expanded="true" signature="5227:5269" ph="select id fr... groups" />
+            <marker date="1481456289696" expanded="true" signature="5318:5382" ph="insert into group_authorities... " />
+            <marker date="1481456289696" expanded="true" signature="5422:5453" ph="delete from " />
+            <marker date="1481456289696" expanded="true" signature="5504:5552" ph="delete from " />
+            <marker date="1481456289696" expanded="true" signature="5599:5643" ph="delete from " />
+            <marker date="1481456289696" expanded="true" signature="5683:5736" ph="update group... " />
+            <marker date="1481456289696" expanded="true" signature="5782:5841" ph="insert into group_members... " />
+            <marker date="1481456289696" expanded="true" signature="5887:5948" ph="delete from " />
+            <marker date="1481456289696" expanded="true" signature="5993:6114" ph="select g.id,... groups" />
+            <marker date="1481456289696" expanded="true" signature="6164:6230" ph="delete from " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/811981f3-b002-4fbb-b787-fee0a67da117/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="5" lean-forward="false" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/ecdf19d9/811981f3-b002-4fbb-b787-fee0a67da117/S191976.IMAGES">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/libs/jquery-3.1.1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/811981f3-b002-4fbb-b787-fee0a67da117/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="12" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="65" column="21" lean-forward="false" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
-          <folding>
-            <marker date="1483886540834" expanded="true" signature="89:3044" ph="..." />
-            <marker date="1483886540834" expanded="true" signature="603:2723" ph="..." />
-          </folding>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="48" lean-forward="false" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/model/Priority.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/model/DatedTasksGroup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="45" column="23" lean-forward="false" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/4.2.0.RELEASE/spring-security-config-4.2.0.RELEASE.jar!/org/springframework/security/config/annotation/authentication/configuration/AuthenticationConfiguration.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="50" column="40" lean-forward="false" selection-start-line="50" selection-start-column="40" selection-end-line="50" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/4.2.0.RELEASE/spring-security-config-4.2.0.RELEASE.jar!/org/springframework/security/config/annotation/web/configuration/WebSecurityConfigurerAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="66" column="36" lean-forward="true" selection-start-line="66" selection-start-column="36" selection-end-line="66" selection-end-column="36" />
+          <caret line="2" column="33" lean-forward="false" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/jdbc/TaskDao.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.3.4.RELEASE/spring-core-4.3.4.RELEASE.jar!/org/springframework/core/env/Environment.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="29" column="17" lean-forward="false" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+        <state relative-caret-position="102">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/AppConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="20" column="39" lean-forward="true" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#633#634#0" expanded="true" />
+            <element signature="e#679#680#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application-context.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        <state relative-caret-position="208">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
-            <marker date="1483893792397" expanded="true" signature="1384:1433" ph="SELECT NAME,... USERS" />
+            <marker date="1483998961999" expanded="false" signature="912:950" ph="oracle.jdbc.OracleDriver" />
+            <marker date="1483998961999" expanded="false" signature="1049:1073" ph="jdbc:oracle:thin:@students.dce.ifmo.ru:1521:XE" />
+            <marker date="1483998961999" expanded="false" signature="1173:1202" ph="s191976" />
+            <marker date="1483998961999" expanded="false" signature="1306:1335" ph="cjj221" />
+            <marker date="1483998961999" expanded="true" signature="2159:2206" ph="SELECT NAME,... USERS" />
+            <marker date="1483998961999" expanded="true" signature="2317:2377" ph="SELECT NAME,... USERS" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/jdbc/UserDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/jdbc/impl/TaskDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1254">
-          <caret line="77" column="63" lean-forward="false" selection-start-line="77" selection-start-column="63" selection-end-line="77" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1483892394257" expanded="true" signature="1469:1715" ph="INSERT INTO TASKS... " />
-            <marker date="1483892394257" expanded="true" signature="1844:1902" ph="UPDATE TASKS... " />
-            <marker date="1483892394257" expanded="true" signature="2031:2081" ph="UPDATE TASKS... " />
-            <marker date="1483892394257" expanded="true" signature="2210:2260" ph="UPDATE TASKS... " />
-            <marker date="1483892394257" expanded="true" signature="2403:2467" ph="UPDATE TASKS... " />
-            <marker date="1483892394257" expanded="true" signature="2581:2623" ph="UPDATE TASKS... " />
-            <marker date="1483892394257" expanded="true" signature="2735:2764" ph="DELETE FROM " />
-            <marker date="1483892394257" expanded="true" signature="5554:5734" ph="SELECT * FRO... TASKS" />
-            <marker date="1483892394257" expanded="true" signature="6028:6208" ph="SELECT * FRO... TASKS" />
-            <marker date="1483892394257" expanded="true" signature="6517:6698" ph="SELECT * FRO... TASKS" />
-            <marker date="1483892394257" expanded="true" signature="7070:7302" ph="SELECT * FRO... TASKS" />
-            <marker date="1483892394257" expanded="true" signature="7070:7331" ph="SELECT * FRO... TASKS" />
-            <marker date="1483892394257" expanded="true" signature="7561:7669" ph="SELECT * FRO... TASKS" />
-            <marker date="1483892394257" expanded="true" signature="7962:8143" ph="SELECT * FRO... TASKS" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.6/tomcat-embed-core-8.5.6.jar!/javax/servlet/http/HttpServletRequestWrapper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="41" column="18" lean-forward="false" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
-          <folding>
-            <element signature="e#1262#1263#0" expanded="true" />
-            <element signature="e#1330#1331#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.6/tomcat-embed-core-8.5.6.jar!/javax/servlet/http/HttpServletRequest.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="31" column="11" lean-forward="false" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/js.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="69" lean-forward="true" selection-start-line="24" selection-start-column="69" selection-end-line="24" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/userpage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="61" column="85" lean-forward="false" selection-start-line="61" selection-start-column="85" selection-end-line="61" selection-end-column="85" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/jdbc/impl/UserDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-336">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1483892394210" expanded="true" signature="927:1025" ph="INSERT INTO USERS... " />
-            <marker date="1483892394210" expanded="true" signature="1139:1199" ph="UPDATE USERS... " />
-            <marker date="1483892394210" expanded="true" signature="1332:1401" ph="UPDATE USERS... " />
-            <marker date="1483892394210" expanded="true" signature="1526:1555" ph="DELETE FROM " />
-            <marker date="1483892394210" expanded="true" signature="1713:1765" ph="SELECT ID FR... USERS" />
-            <marker date="1483892394210" expanded="true" signature="2037:2078" ph="SELECT ID FR... USERS" />
-            <marker date="1483892394210" expanded="true" signature="2037:2102" ph="SELECT COUNT... USERS" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/security/WebSecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="106">
+          <caret line="15" column="116" lean-forward="false" selection-start-line="15" selection-start-column="116" selection-end-line="15" selection-end-column="116" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="81" column="5" lean-forward="true" selection-start-line="81" selection-start-column="5" selection-end-line="81" selection-end-column="5" />
+        <state relative-caret-position="-136">
+          <caret line="34" column="31" lean-forward="false" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/4.1.3.RELEASE/spring-security-config-4.1.3.RELEASE.jar!/org/springframework/security/config/annotation/web/configurers/FormLoginConfigurer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="42" column="34" lean-forward="false" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/4.1.3.RELEASE/spring-security-config-4.1.3.RELEASE.jar!/org/springframework/security/config/annotation/web/configurers/AbstractAuthenticationFilterConfigurer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="95" column="19" lean-forward="false" selection-start-line="95" selection-start-column="19" selection-end-line="95" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/security/WebSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="40" column="22" lean-forward="true" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#809#810#0" expanded="true" />
+            <element signature="e#853#854#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/jdbc/impl/CategoryDaoImpl.java" dialect="Oracle" />
     <file url="file://$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/jdbc/impl/TaskDaoImpl.java" dialect="Oracle" />
     <file url="file://$PROJECT_DIR$/src/main/java/ru/ifmo/shelf/jdbc/impl/UserDaoImpl.java" dialect="Oracle" />
     <file url="file://$PROJECT_DIR$/src/main/resources/application-context.xml" dialect="Oracle" />

@@ -15,13 +15,13 @@ public interface TaskDao {
 
     void insert(Task task) throws SQLException;
 
-    void updatePriority(int id, int priority) throws SQLException;
+    void changePriority(int id, int priority) throws SQLException;
 
-    void updateName(int id, String name) throws SQLException;
+    void changeName(int id, String name) throws SQLException;
 
-    void updateTime(int id, String time) throws SQLException;
+    void changeTime(int id, String time) throws SQLException;
 
-    void updateDescription(int id, String description) throws SQLException;
+    void changeDescription(int id, String description) throws SQLException;
 
     void complete(int id) throws SQLException;
 
