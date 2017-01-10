@@ -19,9 +19,11 @@ public interface TaskDao {
 
     void changeName(int id, String name) throws SQLException;
 
-    void changeTime(int id, String time) throws SQLException;
+    void changeDate(int id, String date) throws SQLException;
 
     void changeDescription(int id, String description) throws SQLException;
+
+    void changeCategory(int id, String category) throws SQLException;
 
     void complete(int id) throws SQLException;
 
@@ -38,4 +40,6 @@ public interface TaskDao {
     LinkedHashSet<DatedTasksGroup> getCompletedTasks(User user) throws SQLException, ParseException;
 
     LinkedHashSet<DatedTasksGroup> getInitialTasks(User user) throws SQLException, ParseException;
+
+    LinkedHashSet<DatedTasksGroup> getTasksByCategory(User user, String category) throws SQLException, ParseException;
 }

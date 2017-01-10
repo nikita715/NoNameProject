@@ -10,7 +10,7 @@ public class Task {
 
     public Task() {}
 
-    public Task(int id, int user, String name, String endDate, int priority, String description, Boolean completed) {
+    public Task(int id, int user, String name, String endDate, int priority, String description, Boolean completed, String category) {
         this.id = id;
         this.user = user;
         this.name = name;
@@ -18,6 +18,7 @@ public class Task {
         this.priority = priority;
         this.description = description;
         this.completed = completed;
+        this.category = category;
     }
 
     @Id
@@ -44,7 +45,7 @@ public class Task {
     private Boolean completed;
 
     @Column(name = "CATEGORY")
-    private int category;
+    private String category;
 
     public int getId() {
         return id;
@@ -102,11 +103,11 @@ public class Task {
         this.completed = completed;
     }
 
-    public int getCategory() {
+    public String getCategory() {
         return category;
     }
 
-    public void setCategory(int category) {
+    public void setCategory(String category) {
         this.category = category;
     }
 }

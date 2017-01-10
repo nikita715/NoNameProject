@@ -280,6 +280,7 @@ body {
     line-height: 30px;
     text-decoration: none;
     color: black;
+    cursor: pointer;
 }
 
 .user-nav a:hover {
@@ -314,7 +315,7 @@ body {
 .tasks-navigation {
     display: flex;
     flex-flow: column;
-    width: 15%;
+    min-width: 15%;
     border-right: 1px solid #aaa;
 }
 
@@ -405,7 +406,7 @@ body {
     cursor: pointer;
 }
 
-.task-time {
+.task-category {
     position: absolute;
     top: 0;
     right: 90px;
@@ -518,7 +519,7 @@ body {
 }
 
 .task-add-name {
-    flex-basis: 70%;
+    flex-basis: 66%;
     line-height: 30px;
     font-size: 16px;
     font-weight: 700;
@@ -526,7 +527,7 @@ body {
 }
 
 .task-add-date {
-    flex-basis: 22%;
+    flex-basis: 26%;
     margin-right: 2%;
     line-height: 30px;
     background-color: transparent;
@@ -537,17 +538,21 @@ body {
 }
 
 .task-add-details {
-    flex-basis: 70%;
+    flex-basis: 66%;
     background-color: transparent;
 }
 
 .task-add-submit {
+    display: block;
     width: 27px;
     height: 27px;
+    vertical-align: middle;
     font-size: 0;
-    background-size: contain;
-    background: #99cc33 url(../img/task-complete-button.png);
     border-radius: 100%;
+    border: none;
+    background: #99cc33 url(../img/task-complete-button.png) 0 0;
+    background-size: cover;
+    cursor: pointer;
 }
 
 .task-add-submit:hover {
@@ -612,11 +617,12 @@ body {
     margin: 30px 30px 0;
 }
 
-.settings-mask {
+.page-mask {
     position: absolute;
     left: 0;
     bottom: 0;
     z-index: 1000;
+    display: none;
     width: 100%;
     height: 100%;
     background-color: #444444;
@@ -628,10 +634,151 @@ body {
     top: 20%;
     left: 50%;
     z-index: 1000;
+    display: none;
     width: 300px;
     min-height: 200px;
     margin-left: -150px;
+    margin-bottom: 50px;
     background-color: white;
-    border: 2px solid #A5260A;
+    border: 1px solid #A5260A;
+    opacity: 1;
+}
+
+.settings > h2 {
+    margin: 20px auto 0;
+    text-align: center;
+}
+
+.settings-option {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.delete-user {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.delete-user input {
+    height: 30px;
+    width: 150px;
+    margin: 0 auto;
+    border: none;
+    background-color: #CF2F0C;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+.category-header {
+    position: relative;
+    display: block;
+    text-align: right;
+    min-height: 30px;
+    padding-right: 20px;
+    border: none;
+    background-color: transparent;
+    font-weight: 700;
+    line-height: 30px;
+    font-size: 14px;
+    color: #A5260A;
+    text-decoration: underline;
+}
+
+.category {
+    position: relative;
+    display: block;
+    text-align: right;
+    min-height: 30px;
+    flex-basis: 90%;
+    padding-right: 20px;
+    border: none;
+    background-color: transparent;
+    font-weight: 700;
+    line-height: 30px;
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+}
+
+.tasks-selector-current:before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    border: 5px solid transparent;
+    border-right: 10px solid #A5260A;
+}
+
+.category:hover {
+    background-color: #F9F9F9;
+}
+
+.category:active {
+    color: #aaa;
+}
+
+.tasks-selector:nth-child(5) {
+    border-bottom: 1px solid #aaa;
+}
+
+.category-add {
+    position: relative;
+}
+
+.category-add label {
+    display: block;
+    padding-right: 20px;
+    text-align: right;
+    min-height: 30px;
+    border: none;
+    background-color: transparent;
+    font-weight: 700;
+    line-height: 30px;
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.category-add label:hover {
+    background-color: #F9F9F9;
+}
+
+.category-add label:active {
+    color: #aaa;
+}
+
+.category-add input {
+    position: absolute;
+    right: 20px;
+    top: 7px;
+    display: none;
+    margin: 0;
+    padding: 0;
+    width: 70%;
+}
+
+.category-delete {
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    z-index: 1000;
+    flex-basis: 10%;
+    cursor: pointer;
+    opacity: 0;
+    color: black;
+    text-decoration: none;
+}
+
+.category-container {
+    position: relative;
+}
+
+.category-container:hover .category-delete {
     opacity: 1;
 }

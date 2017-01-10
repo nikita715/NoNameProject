@@ -23,17 +23,17 @@ public class CategoryDaoImpl implements CategoryDao {
 
     @Override
     public void insert(Category category) {
-        jdbcTemplate.update("INSERT INTO CATEGORIES (NAME, USER_ID) VALUES (" + category.getName() +  ", " + category.getUserId() + ")");
+        jdbcTemplate.update("INSERT INTO CATEGORIES (NAME, USER_ID) VALUES ('" + category.getName() +  "', " + category.getUserId() + ")");
     }
 
     @Override
-    public void changeName(Category category) {
-        jdbcTemplate.update("UPDATE CATEGORIES SET NAME = '" + category.getName() + "' WHERE ID = " + category.getId());
+    public void changeName(int id, String name) {
+        jdbcTemplate.update("UPDATE CATEGORIES SET NAME = '" + name + "' WHERE ID = " + id);
     }
 
     @Override
-    public void delete(Category category) {
-        jdbcTemplate.update("DELETE FROM CATEGORIES WHERE ID = " + category.getId());
+    public void delete(int id) {
+        jdbcTemplate.update("DELETE FROM CATEGORIES WHERE ID = " + id);
     }
 
     private LinkedHashSet<Category> convertToSet(SqlRowSet sqlRowSet) {

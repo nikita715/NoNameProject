@@ -4,9 +4,9 @@
     <root id="1"/>
     <schema id="2" parent="1" name="S191976">
       <ObjectId>96</ObjectId>
-      <IntrospectionTimestamp>2017-01-10.01:00:22</IntrospectionTimestamp>
+      <IntrospectionTimestamp>2017-01-10.08:37:59</IntrospectionTimestamp>
       <CreatedTimestamp>2015-05-12.19:31:15</CreatedTimestamp>
-      <ModifiedTimestamp>2017-01-10.01:00:18</ModifiedTimestamp>
+      <ModifiedTimestamp>2017-01-10.08:37:51</ModifiedTimestamp>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -618,7 +618,7 @@
     <table id="172" parent="2" name="TASKS">
       <ObjectId>103499</ObjectId>
       <CreatedTimestamp>2017-01-09.06:43:59</CreatedTimestamp>
-      <ModifiedTimestamp>2017-01-09.06:45:05</ModifiedTimestamp>
+      <ModifiedTimestamp>2017-01-10.08:26:59</ModifiedTimestamp>
     </table>
     <table id="173" parent="2" name="TRUCKS">
       <ObjectId>64514</ObjectId>
@@ -628,7 +628,7 @@
     <table id="174" parent="2" name="USERS">
       <ObjectId>103492</ObjectId>
       <CreatedTimestamp>2017-01-09.06:43:58</CreatedTimestamp>
-      <ModifiedTimestamp>2017-01-09.19:24:20</ModifiedTimestamp>
+      <ModifiedTimestamp>2017-01-10.08:37:51</ModifiedTimestamp>
     </table>
     <routine id="175" parent="2" name="RETURN_IDENTIFIER">
       <ObjectId>73936</ObjectId>
@@ -1398,8 +1398,8 @@
     </column>
     <column id="304" parent="172" name="CATEGORY">
       <Position>8</Position>
-      <DataType>NUMBER(20)|0</DataType>
-      <NotNull>1</NotNull>
+      <DataType>VARCHAR2(20)|0</DataType>
+      <DefaultExpression>&apos;Personal&apos;</DefaultExpression>
     </column>
     <index id="305" parent="172" name="SYS_C0043355">
       <ObjectId>103500</ObjectId>
@@ -1434,50 +1434,42 @@
       <RefTableName>PRIORITIES</RefTableName>
       <RefKeyName>SYS_C0043349</RefKeyName>
     </foreign-key>
-    <foreign-key id="309" parent="172" name="SYS_C0043358">
-      <NameSurrogate>1</NameSurrogate>
-      <ModifiedTimestamp>2017-01-09.06:43:59</ModifiedTimestamp>
-      <ColNames>CATEGORY</ColNames>
-      <InitiallyDeferred>1</InitiallyDeferred>
-      <RefTableName>CATEGORIES</RefTableName>
-      <RefKeyName>SYS_C0043346</RefKeyName>
-    </foreign-key>
-    <trigger id="310" parent="172" name="TASKS_ID_TRIGGER">
+    <trigger id="309" parent="172" name="TASKS_ID_TRIGGER">
       <ObjectId>103465</ObjectId>
       <CreatedTimestamp>2017-01-09.06:44:42</CreatedTimestamp>
       <ModifiedTimestamp>2017-01-09.06:44:42</ModifiedTimestamp>
       <Events>I</Events>
       <Turn>before-row</Turn>
     </trigger>
-    <column id="311" parent="173" name="ID">
+    <column id="310" parent="173" name="ID">
       <Position>1</Position>
       <DataType>NUMBER(10)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="312" parent="173" name="NAME">
+    <column id="311" parent="173" name="NAME">
       <Position>2</Position>
       <DataType>VARCHAR2(20)|0</DataType>
     </column>
-    <column id="313" parent="173" name="T_NUMBER">
+    <column id="312" parent="173" name="T_NUMBER">
       <Position>3</Position>
       <DataType>VARCHAR2(6)|0</DataType>
     </column>
-    <column id="314" parent="173" name="LENGTH">
+    <column id="313" parent="173" name="LENGTH">
       <Position>4</Position>
       <DataType>FLOAT(10)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="315" parent="173" name="WIDTH">
+    <column id="314" parent="173" name="WIDTH">
       <Position>5</Position>
       <DataType>FLOAT(10)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="316" parent="173" name="HEIGHT">
+    <column id="315" parent="173" name="HEIGHT">
       <Position>6</Position>
       <DataType>FLOAT(10)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="317" parent="173" name="SYS_C0026976">
+    <index id="316" parent="173" name="SYS_C0026976">
       <ObjectId>64515</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <CreatedTimestamp>2016-01-18.17:40:06</CreatedTimestamp>
@@ -1486,7 +1478,7 @@
       <ColNames>ID</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="318" parent="173" name="SYS_C0026976">
+    <key id="317" parent="173" name="SYS_C0026976">
       <NameSurrogate>1</NameSurrogate>
       <ModifiedTimestamp>2016-01-18.17:40:06</ModifiedTimestamp>
       <ColNames>ID</ColNames>
@@ -1494,33 +1486,39 @@
       <UnderlyingIndexName>SYS_C0026976</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <trigger id="319" parent="173" name="TRUCKS_T">
+    <trigger id="318" parent="173" name="TRUCKS_T">
       <ObjectId>64492</ObjectId>
       <CreatedTimestamp>2016-01-18.17:40:43</CreatedTimestamp>
       <ModifiedTimestamp>2016-01-18.17:40:43</ModifiedTimestamp>
       <Events>I</Events>
       <Turn>before-row</Turn>
     </trigger>
-    <column id="320" parent="174" name="ID">
+    <column id="319" parent="174" name="ID">
       <Position>1</Position>
       <DataType>NUMBER(12)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="321" parent="174" name="NAME">
+    <column id="320" parent="174" name="NAME">
       <Position>2</Position>
       <DataType>VARCHAR2(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="322" parent="174" name="PASSWORD">
+    <column id="321" parent="174" name="PASSWORD">
       <Position>3</Position>
       <DataType>VARCHAR2(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="323" parent="174" name="ENABLED">
+    <column id="322" parent="174" name="ENABLED">
       <Position>4</Position>
       <DataType>VARCHAR2(5)|0</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;TRUE&apos; </DefaultExpression>
+    </column>
+    <column id="323" parent="174" name="PRIORITIES_QUANTITY">
+      <Position>5</Position>
+      <DataType>NUMBER(1)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>5</DefaultExpression>
     </column>
     <index id="324" parent="174" name="SYS_C0043343">
       <ObjectId>103493</ObjectId>

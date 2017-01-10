@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import ru.ifmo.shelf.jdbc.CategoryDao;
 import ru.ifmo.shelf.jdbc.TaskDao;
 import ru.ifmo.shelf.jdbc.UserDao;
+import ru.ifmo.shelf.model.Category;
 import ru.ifmo.shelf.model.Task;
 import ru.ifmo.shelf.model.User;
 
@@ -47,26 +48,6 @@ public class UserController {
     public String enterSite(Model model, @ModelAttribute User user) throws SQLException {
 
         user.setName(user.getName().toLowerCase());
-
-//        Authentication authentication = new UsernamePasswordAuthenticationToken(user.getName(), user.getPassword());
-//        try {
-//
-//            Authentication authentication = authenticationManager
-//                    .authenticate(authenticationToken);
-//
-//
-//            SecurityContext securityContext = SecurityContextHolder
-//                    .getContext();
-//
-//            securityContext.setAuthentication(authentication);
-//
-//            HttpSession session = request.getSession(true);
-//            session.setAttribute("SPRING_SECURITY_CONTEXT", securityContext);
-//
-//            return "sucess";
-//        } catch (AuthenticationException ex) {
-//            return "fail " + ex.getMessage();
-//        }
 
         if (userDao.connect(user) == 0) {
             model.addAttribute("error", "wrongEnterData");
@@ -107,8 +88,10 @@ public class UserController {
         }
         model.addAttribute("user", currentUser);
         model.addAttribute("task", new Task());
+        model.addAttribute("category", new Category());
         model.addAttribute("datedTasksSet", taskDao.getInitialTasks(currentUser));
         model.addAttribute("tasksSelector", "initial");
+        model.addAttribute("categoriesSet", categoryDao.getCategories(currentUser));
         return "userpage";
     }
 
@@ -119,8 +102,10 @@ public class UserController {
         }
         model.addAttribute("user", currentUser);
         model.addAttribute("task", new Task());
+        model.addAttribute("category", new Category());
         model.addAttribute("datedTasksSet", taskDao.getTasksForToday(currentUser));
         model.addAttribute("tasksSelector", "today");
+        model.addAttribute("categoriesSet", categoryDao.getCategories(currentUser));
         return "userpage";
     }
 
@@ -131,8 +116,10 @@ public class UserController {
         }
         model.addAttribute("user", currentUser);
         model.addAttribute("task", new Task());
+        model.addAttribute("category", new Category());
         model.addAttribute("datedTasksSet", taskDao.getTasksForTomorrow(currentUser));
         model.addAttribute("tasksSelector", "tomorrow");
+        model.addAttribute("categoriesSet", categoryDao.getCategories(currentUser));
         return "userpage";
     }
 
@@ -143,8 +130,10 @@ public class UserController {
         }
         model.addAttribute("user", currentUser);
         model.addAttribute("task", new Task());
+        model.addAttribute("category", new Category());
         model.addAttribute("datedTasksSet", taskDao.getTasksForWeek(currentUser));
         model.addAttribute("tasksSelector", "week");
+        model.addAttribute("categoriesSet", categoryDao.getCategories(currentUser));
         return "userpage";
     }
 
@@ -155,8 +144,10 @@ public class UserController {
         }
         model.addAttribute("user", currentUser);
         model.addAttribute("task", new Task());
+        model.addAttribute("category", new Category());
         model.addAttribute("datedTasksSet", taskDao.getUnfinishedTasks(currentUser));
         model.addAttribute("tasksSelector", "unfinished");
+        model.addAttribute("categoriesSet", categoryDao.getCategories(currentUser));
         return "userpage";
     }
 
@@ -167,8 +158,24 @@ public class UserController {
         }
         model.addAttribute("user", currentUser);
         model.addAttribute("task", new Task());
+        model.addAttribute("category", new Category());
         model.addAttribute("datedTasksSet", taskDao.getCompletedTasks(currentUser));
         model.addAttribute("tasksSelector", "completed");
+        model.addAttribute("categoriesSet", categoryDao.getCategories(currentUser));
+        return "userpage";
+    }
+
+    @GetMapping("/{username}/category/{category}")
+    public String tasksByCategory(Model model, @PathVariable String username, @PathVariable String category) throws SQLException, ParseException {
+        if (currentUser == null) {
+            return "redirect:/";
+        }
+        model.addAttribute("user", currentUser);
+        model.addAttribute("task", new Task());
+        model.addAttribute("category", new Category());
+        model.addAttribute("datedTasksSet", taskDao.getTasksByCategory(currentUser, category));
+        model.addAttribute("tasksSelector", category);
+        model.addAttribute("categoriesSet", categoryDao.getCategories(currentUser));
         return "userpage";
     }
 
@@ -182,12 +189,31 @@ public class UserController {
         return "redirect:/" + request.getHeader("Referer").substring(22);
     }
 
+    @PostMapping("/{username}/addcategory")
+    public String addCategory(@ModelAttribute Category category, @PathVariable String username, HttpServletRequest request) throws SQLException, ParseException {
+        if (currentUser == null) {
+            return "redirect:/";
+        }
+        category.setUserId(currentUser.getId());
+        categoryDao.insert(category);
+        return "redirect:/" + request.getHeader("Referer").substring(22);
+    }
+
     @GetMapping("/{username}/delete/{id}")
     public String deleteTask(@PathVariable int id, HttpServletRequest request) throws SQLException {
         if (currentUser == null) {
             return "redirect:/";
         }
         taskDao.delete(id);
+        return "redirect:/" + request.getHeader("Referer").substring(22);
+    }
+
+    @GetMapping("/{username}/deletecategory/{id}")
+    public String deleteCategory(@PathVariable int id, HttpServletRequest request) throws SQLException {
+        if (currentUser == null) {
+            return "redirect:/";
+        }
+        categoryDao.delete(id);
         return "redirect:/" + request.getHeader("Referer").substring(22);
     }
 

@@ -20,6 +20,8 @@ public class Category {
         this.userId = userId;
     }
 
+    public Category() {}
+
     @Id
     @GeneratedValue
     @Column(name = "ID")

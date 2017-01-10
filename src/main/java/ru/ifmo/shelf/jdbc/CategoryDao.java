@@ -9,9 +9,9 @@ public interface CategoryDao {
 
     void insert(Category category);
 
-    void changeName(Category category);
+    void changeName(int id, String name);
 
-    void delete(Category category);
+    void delete(int id);
 
     LinkedHashSet<Category> getCategories(User user);
 }

@@ -19,6 +19,9 @@ public class User {
     @Column(name = "PASSWORD")
     private String password;
 
+    @Column(name = "PRIORITIES_QUANTITY")
+    private String prioritiesQuantity;
+
     private String passwordСheck;
 
     public Integer getId() {
@@ -51,5 +54,13 @@ public class User {
 
     public void setPasswordСheck(String passwordСheck) {
         this.passwordСheck = passwordСheck;
+    }
+
+    public String getPrioritiesQuantity() {
+        return prioritiesQuantity;
+    }
+
+    public void setPrioritiesQuantity(String prioritiesQuantity) {
+        this.prioritiesQuantity = prioritiesQuantity;
     }
 }

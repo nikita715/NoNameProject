@@ -2,6 +2,7 @@ package ru.ifmo.shelf.jdbc.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.support.rowset.SqlRowSet;
 import org.springframework.stereotype.Repository;
 import ru.ifmo.shelf.jdbc.UserDao;
 import ru.ifmo.shelf.model.User;
@@ -25,6 +26,10 @@ public class UserDaoImpl implements UserDao {
     @Override
     public void insert(User user) throws SQLException {
         jdbcTemplate.update("INSERT INTO USERS (NAME, PASSWORD) VALUES ('" + user.getName() + "', '" + user.getPassword() + "')");
+        SqlRowSet rowSet = jdbcTemplate.queryForRowSet("SELECT ID FROM USERS WHERE NAME = '" + user.getName() + "'");
+        rowSet.next();
+        int userId = rowSet.getInt("ID");
+        jdbcTemplate.update("INSERT INTO CATEGORIES (NAME, USER_ID) VALUES ('Personal', " + userId + ")");
     }
 
     @Override
