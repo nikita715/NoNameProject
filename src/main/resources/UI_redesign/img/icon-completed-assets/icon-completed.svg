@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #fff;
+        stroke-width: 1px;
+      }
+    </style>
+  </defs>
+  <circle id="Эллипс_1" data-name="Эллипс 1" class="cls-1" cx="60.047" cy="60.047" r="49.953"/>
+</svg>

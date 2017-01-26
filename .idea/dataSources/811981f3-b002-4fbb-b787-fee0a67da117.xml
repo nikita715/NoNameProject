@@ -1512,7 +1512,7 @@
       <Position>4</Position>
       <DataType>VARCHAR2(5)|0</DataType>
       <NotNull>1</NotNull>
-      <DefaultExpression>&apos;TRUE&apos; </DefaultExpression>
+      <DefaultExpression>&apos;TRUE&apos;</DefaultExpression>
     </column>
     <column id="323" parent="174" name="PRIORITIES_QUANTITY">
       <Position>5</Position>

@@ -22,25 +22,27 @@ $(document).ready(function () {
         $('.settings').css('display', 'none');
         $('.page-mask').css('display', 'none');
     });
-    $('.settings-opener').click(function () {
+    $('.user-nav__settings').click(function () {
         $('.page-mask').css('display', 'block');
         $('.settings').css('display', 'block');
     });
-    var user_nav_condition;
-    $('.user-nav-opener').click(function () {
-        if (user_nav_condition === 0 || user_nav_condition === undefined) {
+    var user_nav_condition = 0;
+    $('.main-header__user-nav-opener').click(function () {
+        if (user_nav_condition === 0) {
             $('.user-nav').css('display', 'flex').css('opacity', '1');
-            $('.user-nav-opener').css('background-color', '#F5F5F5');
+//            $('.main-header__user-nav-opener').css('background-color', '#F5F5F5');
             user_nav_condition = 1;
-        } else if (user_nav_condition === 1) {
+        } else {
             $('.user-nav').css('display', 'none').css('opacity', '0');
-            $('.user-nav-opener').css('background-color', 'transparent');
+            $('.main-header__user-nav-opener').css('background-color', 'transparent');
             user_nav_condition = 0;
         }
-    }).hover(function () {
-        $('.user-nav-opener').css('background-color', '#F5F5F5');
-    }).mouseleave(function () {
-        $('.user-nav-opener').css('background-color', 'white');
+    })
+//        .hover(function () {
+//        $('.main-header__user-nav-opener').css('background-color', '#F5F5F5');
+//    })
+        .mouseleave(function () {
+        $('.main-header__user-nav-opener').css('background-color', 'white');
     });
     $('h4').click(function () {
         $(this).css('display', 'none');
@@ -55,11 +57,11 @@ $(document).ready(function () {
         $('.category-add input').css('display', 'block').focus();
     });
     $(document).mouseup(function (e) {
-       if ($('.user-nav-opener').has(e.target).length === 0) {
-           $('.user-nav').css('display', 'none').css('opacity', '0');
-           $('.user-nav-opener').css('background-color', 'transparent');
-           user_nav_condition = 0;
-       }
+        if ($('.main-header__user-nav-opener').has(e.target).length === 0) {
+            $('.user-nav').css('display', 'none').css('opacity', '0');
+            $('.main-header__user-nav-opener').css('background-color', 'transparent');
+            user_nav_condition = 0;
+        }
         if ($('.task-details').parent().has(e.target).length === 0) {
             $('.task-details').css('display', 'none');
         }
