@@ -1,74 +1,109 @@
 <!DOCTYPE HTML>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 
 <head>
     <title>Shelf</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link href="../static/css/style.css" rel="stylesheet" type="text/css" />
-    <link rel="icon" type="image/png" href="../static/img/favicon.png" />
+    <link th:href="@{/css/style.css}" href="../static/css/style.css" rel="stylesheet" type="text/css" />
+    <link th:href="@{/img/favicon.png}" rel="icon" type="image/png" href="../static/img/favicon.png" />
 </head>
 
 <body class="user-page">
-    <header class="main-header">
-        <div class="main-header__container">
-            <a class="main-header__site-link">
-                <img class="site-logo" src="../static/img/site-logo-main.png" width="103" height="50" />
+    <header class="page-header">
+        <div class="page-header__container">
+            <a class="page-header__site-link" href="#" th:href="@{'/'+${user.name}}">
+                <img src="../static/img/site-logo-white.svg" th:src="@{/img/site-logo-white.svg}" />
             </a>
-            <button class="main-header__user-nav-opener">Settings</button>
-            <button class="main-header__completed">Completed</button>
+            
+            <!--<form class="page-header__add-task">-->
+                <!--<label class="page-header__add-task__name-label" for="page-header__add-task__name"></label>-->
+                <!--<input class="page-header__add-task__name" id="page-header__add-task__name" type="text" th:field="name"/>-->
+                <!--<input class="page-header__button page-header__add-task__submit" type="submit"/>-->
+            <!--</form>-->
+
+            <button class="page-header__button page-header__add">Настройки</button>
+            <a class="page-header__button page-header__completed" th:href="@{'/'+${user.name}+'/completed'}">Законченные</a>
+            <button class="page-header__button page-header__settings">Настройки</button>
             <nav class="user-nav">
-                <a class="user-nav__settings">Settings</a>
-                <a class="user-nav__exit">Exit</a>
+                <a class="user-nav__link">Settings</a>
+                <a class="user-nav__link">About</a>
+                <a class="user-nav__link" th:href="@{/exit}">Exit</a>
             </nav>
         </div>
     </header>
-    <main class="tasks-page">
-        <aside class="tasks-navigation">
-            <a class="tasks-navigation__selector" id="tasks-navigation-today" href="#">Today</a>
-            <a class="tasks-navigation__selector" id="tasks-navigation-week" href="#">Week</a>
-            <span class="category-header">Categories</span>
-            <div class="category-container">
-                <a class="category-delete">&times;</a>
-                <a class="category" href="#">Category</a>
-            </div>
-            <form class="category-add" method="post">
-                <label>New</label>
-                <input type="text" />
-            </form>
-        </aside>
-        <section class="tasks">
-            <div class="tasks-group">
-                <h3 class="tasks-group-date">December, 28</h3>
-                <div class="task">
-                    <span class="task-name">Some task</span>
-                    <button class="task-details-button">Описание</button>
-                    <span class="task-category">Category</span>
-                    <div class="task-complete-button-container">
-                        <a class="task-complete-button">Выполнено</a>
-                    </div>
-                    <p class="task-details">details</p>
-                    <a class="task-delete">&times;</a>
+    <main class="page-main">
+        <aside class="task-nav-container">
+            <nav class="task-nav">
+                <div class="task-nav__selector task-nav__date task-nav__date--today">
+                    <a class="task-nav__link" th:href="@{'/'+${user.name}+'/today'}">Today</a>
                 </div>
+                <div class="task-nav__selector task-nav__date task-nav__date--week">
+                    <a class="task-nav__link" th:href="@{'/'+${user.name}+'/week'}">Week</a>
+                </div>
+                <div class="task-nav__selector task-nav__date task-nav__date--period">
+                    <a class="task-nav__link">Period</a>
+                    <form class="period-chooser">
+                        <label class="period-chooser__from-label" for="period-chooser__from">From</label>
+                        <input class="period-chooser__from" id="period-chooser__from" type="date"/>
+                        <label class="period-chooser__to-label" for="period-chooser__to">To</label>
+                        <input class="period-chooser__to" id="period-chooser__to" type="date"/>
+                        <input class="period-chooser__submit" type="submit">
+                        <button class="period-chooser__cancel" type="button"></button>
+                    </form>
+                </div>
+                <h2 class="task-nav__shelves-head">Projects</h2>
+                <div class="task-nav__selector task-nav__project" th:each="category : ${categoriesSet}">
+                    <a class="task-nav__link" th:href="@{'/' + ${user.name} + '/category/' + ${category.id}}" th:text="${category.name}">English</a>
+                    <button class="button-edit task-nav__edit">Edit</button>
+                    <div class="task-nav__selector-menu">
+                        <a class="task-nav__selector-menu__action">Edit</a>
+                        <a class="task-nav__selector-menu__action" th:href="@{'/' + ${user.name} + '/deletecategory/' + ${category.id}}">Delete</a>
+                    </div>
+                </div>
+                <button class="task-nav__add-project-button">Add new</button>
+                <form class="task-nav__add-project" method="post" action="#" th:object="${category}" th:action="@{'/'+${user.name}+'/addcategory'}">
+                    <label for="task-nav__add-project__name">Название</label>
+                    <input class="task-nav__add-project__name" id="task-nav__add-project__name" type="text" autocomplete="off" th:field="*{name}"/>
+                    <button class="task-nav__add-project__submit" id="task-nav__add-project__submit" type="submit"></button>
+                    <button class="task-nav__add-project__cancel" type="button"></button>
+                </form>
+            </nav>
+        </aside>
+        <section class="tasks-view">
+            <div class="tasks-date-group" th:each="currentDateSet : ${datedTasksSet}">
+                <h2 class="tasks-date-group__date" th:text="${currentDateSet.time}">December, 28</h2>
+                <div class="task" th:each="task : ${currentDateSet.tasks}">
+                    <h3 class="task__name" th:text="${task.name}">Name</h3>
+                    <p class="task__project" th:text="${task.categoryName}">Category</p>
+                    <button class="button-edit task__button task__edit">Edit</button>
+                    <div class="drop-down-menu task__menu">
+                        <a class="drop-down-menu__action task__menu__action">Edit</a>
+                        <a class="drop-down-menu__action task__menu__action" th:href="@{'/' + ${user.name} + '/delete/' + ${task.id}}">Delete</a>
+                    </div>
+                    <button class="task__button task__complete" th:href="@{'/' + ${user.name} + '/complete/' + ${task.id}}">Complete</button>
+                </div>
+                <h3 class="task-date-group__add-label">Add new</h3>
+                <form class="task-date-group__add" id="task-date-group__add" method="post" th:object="${task}" th:action="@{'/'+${user.name}+'/add'}">
+                    <input class="task-date-group__add__name" type="text" placeholder="Task name"
+                           maxlength="30" th:field="*{name}"/>
+                    <input class="task-date-group__add__date" type="date" th:value="${currentDateSet.timeDB}" th:field="*{endDate}"/>
+                    <select class="task-add-priority" name="priority" th:field="*{priority}">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <select class="task-add-category" name="category" th:field="*{category}">
+                        <option value="0">No category</option>
+                        <option th:each="category : ${categoriesSet}" th:text="${category.name}" th:value="${category.id}">Category</option>
+                    </select>
+                    <input class="task-date-group__add__submit" type="submit"/>
+                    <button class="task-date-group__add__cancel" type="button"></button>
+                </form>
             </div>
         </section>
     </main>
-    <div class="page-mask"></div>
-    <div class="settings">
-        <h2>Settings</h2>
-        <form class="settings-option" id="priorities-quantity">
-            <label for="priorities-quantity">Quantity of priorities:
-                <select name="priorities-quantity">
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                </select>
-            </label>
-            <input type="submit" value="Set" />
-        </form>
-        <form class="delete-user" id="delete-user">
-            <input name="delete-user" type="submit" value="Delete user" />
-        </form>
-    </div>
     <script src="../static/js/libs/jquery-3.1.1.js" th:src="@{/js/libs/jquery-3.1.1.js}"></script>
     <script src="../static/js/js.js" th:src="@{/js/js.js}"></script>
 </body>

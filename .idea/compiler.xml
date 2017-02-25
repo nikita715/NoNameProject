@@ -8,11 +8,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="shelf" />
         <module name="Shelf" />
+        <module name="Shelffirst" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Shelf" target="1.8" />
       <module name="shelf" target="1.8" />
+      <module name="Shelffirst" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

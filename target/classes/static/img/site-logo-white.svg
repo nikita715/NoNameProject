@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="85px" height="42px">
+	<text font-family="Lobster" fill="rgb(255, 255, 255)" font-size="40px" x="0px" y="32px">Shelf</text>
+	<path stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 255, 255)" d="
+		M1.000,36.000
+		L58.000,36.000
+		L58.000,39.000
+		L1.000,39.000
+		L1.000,36.000 Z" />
+</svg>

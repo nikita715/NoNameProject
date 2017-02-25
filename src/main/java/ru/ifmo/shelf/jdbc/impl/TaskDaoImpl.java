@@ -22,8 +22,8 @@ import java.util.LinkedHashSet;
 @Repository
 public class TaskDaoImpl implements TaskDao {
 
-    private static SimpleDateFormat dateFormatDB = new SimpleDateFormat("yyyy-MM-DD");
-    private static SimpleDateFormat dateFormatTasksGroup = new SimpleDateFormat("MMMM, D");
+    private static SimpleDateFormat dateFormatDB = new SimpleDateFormat("yyyy-MM-dd");
+    private static SimpleDateFormat dateFormatTasksGroup = new SimpleDateFormat("MMMM, d");
     private static SimpleDateFormat dateFormatTask = new SimpleDateFormat("D MMM");
 
     private final JdbcTemplate jdbcTemplate;
@@ -73,6 +73,11 @@ public class TaskDaoImpl implements TaskDao {
         jdbcTemplate.update("DELETE FROM TASKS WHERE ID = " + id);
     }
 
+    @Override
+    public String getCategoryName(int id) {
+        return jdbcTemplate.queryForObject("SELECT NAME FROM CATEGORIES WHERE ID = ?", new Object[]{id}, String.class);
+    }
+
     private LinkedHashSet<DatedTasksGroup> resultSetToDatedTasksSet(SqlRowSet resultSet) throws SQLException, ParseException {
         LinkedHashSet<DatedTasksGroup> datedSet = new LinkedHashSet<DatedTasksGroup>();
 
@@ -85,11 +90,12 @@ public class TaskDaoImpl implements TaskDao {
             int priority = resultSet.getInt("PRIORITY");
             String name = resultSet.getString("NAME");
             String description = resultSet.getString("DESCRIPTION");
-            String category = resultSet.getString("CATEGORY");
+            int category = resultSet.getInt("CATEGORY");
+            String categoryName = getCategoryName(category);
             Date endDate = dateFormatDB.parse(resultSet.getString("END_DATE"));
             String taskDate = dateFormatTask.format(endDate);
             boolean completed = resultSet.getBoolean("COMPLETED");
-            Task task = new Task(id, userId, name, taskDate, priority, description, currentDateCompleted, category);
+            Task task = new Task(id, userId, name, taskDate, priority, description, currentDateCompleted, category, categoryName);
 
             if (currentDate.equals(new Date(0))) {
                 currentDate = endDate;
@@ -98,6 +104,8 @@ public class TaskDaoImpl implements TaskDao {
             if (!endDate.equals(currentDate)) {
                 DatedTasksGroup tasksGroup = new DatedTasksGroup();
                 tasksGroup.setTime(dateFormatTasksGroup.format(currentDate));
+                tasksGroup.setTimeDB(dateFormatDB.format(endDate));
+                System.out.println(dateFormatDB.format(endDate));
                 tasksGroup.setTasks(currentDateSet);
                 if (!currentDateCompleted) {
                     tasksGroup.setOverdue(isOverdue(currentDate));
@@ -118,6 +126,8 @@ public class TaskDaoImpl implements TaskDao {
         if (currentDateSet.size() > 0) {
             DatedTasksGroup tasksGroup = new DatedTasksGroup();
             tasksGroup.setTime(dateFormatTasksGroup.format(currentDate));
+            tasksGroup.setTimeDB(dateFormatDB.format(currentDate));
+            System.out.println(dateFormatDB.format(currentDate));
             tasksGroup.setTasks(currentDateSet);
             if (!currentDateCompleted) {
                 tasksGroup.setOverdue(isOverdue(currentDate));

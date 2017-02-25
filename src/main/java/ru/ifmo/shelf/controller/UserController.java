@@ -92,6 +92,9 @@ public class UserController {
         model.addAttribute("datedTasksSet", taskDao.getInitialTasks(currentUser));
         model.addAttribute("tasksSelector", "initial");
         model.addAttribute("categoriesSet", categoryDao.getCategories(currentUser));
+//        WebContext context = new org.thymeleaf.context.WebContext(null, null, null);
+//        context.setVariable("user", currentUser);
+//        context.setVariable("task", new Task());
         return "userpage";
     }
 

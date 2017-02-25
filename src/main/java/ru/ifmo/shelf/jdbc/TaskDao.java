@@ -29,6 +29,8 @@ public interface TaskDao {
 
     void delete(int id) throws SQLException;
 
+    String getCategoryName(int user);
+
     LinkedHashSet<DatedTasksGroup> getUnfinishedTasks(User user) throws SQLException, ParseException;
 
     LinkedHashSet<DatedTasksGroup> getTasksForToday(User user) throws SQLException, ParseException;

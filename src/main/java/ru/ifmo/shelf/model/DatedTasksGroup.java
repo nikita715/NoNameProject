@@ -9,6 +9,8 @@ public class DatedTasksGroup {
 
     private String time;
 
+    private String timeDB;
+
     private LinkedHashSet<Task> tasks;
 
     private Boolean overdue;
@@ -45,5 +47,13 @@ public class DatedTasksGroup {
 
     public void setCompleted(Boolean completed) {
         this.completed = completed;
+    }
+
+    public String getTimeDB() {
+        return timeDB;
+    }
+
+    public void setTimeDB(String timeDB) {
+        this.timeDB = timeDB;
     }
 }
