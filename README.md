@@ -1,2 +1,3 @@
 # Shelf
-App for task management
+Test app for task management. Written in Java with Spring framework.
+P.S. It's like Todoist, and it's not at all like Todoist.
